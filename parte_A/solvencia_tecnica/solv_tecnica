@@ -1,0 +1,322 @@
+%
+% Carátula oficial de 75.02 Algoritmos y Programación I, cátedra Cardozo.
+%
+% Basado en el template realizado por Diego Essaya, disponible en
+%                                                         http://lug.fi.uba.ar
+% Modificado por Michel Peterson.
+% Modificado por Sebastián Santisi.
+
+%
+% Acá se define el tamaño de letra principal:
+%
+\documentclass[12pt]{article}
+
+%
+% Título y autor(es):
+%
+\title{Trabajo Práctico N\b o X}
+\author{Apellido1\\Apellido2}
+
+%------------------------- Carga de paquetes ---------------------------
+%
+% Si no necesitás algún paquete, comentalo.
+%
+
+%
+% Definición del tamaño de página y los márgenes:
+%
+%\usepackage[a4paper,headheight=16pt,scale={0.7,0.8},hoffset=0.5cm]{geometry}
+\usepackage[letterpaper,headheight=16pt,scale={0.7,0.8},hoffset=0.5cm]{geometry}
+\usepackage{epstopdf}
+
+%
+% Vamos a escribir en castellano:
+%
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+
+%
+% Si preferís el tipo de letra Helvetica (Arial), descomentá las siguientes
+% dos lineas (las fórmulas seguirán estando en Times):
+%
+%\usepackage{helvet}
+%\renewcommand\familydefault{\sfdefault}
+
+%
+% El paquete amsmath agrega algunas funcionalidades extra a las fórmulas. 
+% Además defino la numeración de las tablas y figuras al estilo "Figura 2.3", 
+% en lugar de "Figura 7". (Por lo tanto, aunque no uses fórmulas, si querés
+% este tipo de numeración dejá el paquete amsmath descomentado).
+%
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+%
+% Para tener cabecera y pie de página con un estilo personalizado:
+%
+\usepackage{fancyhdr}
+
+%
+% Para poner el texto "Figura X" en negrita:
+% (Si no tenés el paquete 'caption2', probá con 'caption').
+%
+\usepackage[hang,bf]{caption2}
+
+%
+% Para poder usar subfiguras: (al estilo Figura 2.3(b) )
+%
+%\usepackage{subfigure}
+
+%
+% Para poder agregar notas al pie en tablas:
+%
+%\usepackage{threeparttable}
+
+%------------------------------ graphicx ----------------------------------
+%
+% Para incluir imágenes, el siguiente código carga el paquete graphicx 
+% según se esté generando un archivo dvi o un pdf (con pdflatex). 
+
+% Para generar dvi, descomentá la linea siguiente:
+%\usepackage[dvips]{graphicx}
+
+% Para generar pdf, descomentá las dos lineas seguientes:
+\usepackage[pdftex]{graphicx}
+\pdfcompresslevel=9
+
+%
+% Todas las imágenes están en el directorio tp-img:
+%
+\newcommand{\imgdir}{includes}
+\graphicspath{{\imgdir/}}
+%
+%------------------------------ graphicx ----------------------------------
+
+% Necesitas este paquete si haces los diagrámas de flujo en el prográma Dia 
+%\usepackage{tikz}
+
+
+%------------------------- Inicio del documento ---------------------------
+
+\begin{document}
+
+%
+% Hago que en la cabecera de página se muestre a la derecha la sección,
+% y en el pie, en número de página a la derecha:
+%
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{}{\thesection\ \ #1}}
+\lhead{}
+\chead{}
+\rhead{\rightmark}
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage}
+
+%
+% Carátula:
+%
+\begin{titlepage}
+
+\thispagestyle{empty}
+
+\begin{center}
+%\includegraphics[scale=0.1]{umss}\\
+\large{\textsc{Universidad Mayor de San Sim\'on}}\\
+\large{\textsc{Facultad de Ciencias y Tecnolog\'ia }}\\
+\large{\textsc{Ingenieria de Sistemas}}\\
+\small{Año 2012}
+\end{center}
+
+\vfill
+
+\begin{center}
+\Large{\underline{\textsc{Conformacion}}}
+\end{center}
+
+\vfill
+
+\begin{tabbing}
+\hspace{2cm}\=\+
+	\textsc{Materia:} Taller de ingenieria de software\\
+	\textsc{Fecha:} 28 de agosto del 2013\\
+	\textsc{Integrantes:}\hspace{-1cm}\=\+\hspace{1cm}\=\hspace{6cm}\=\\
+  Falta\\ 
+\end{tabbing}
+
+\vfill
+
+\hrule
+\vspace{0.2cm}
+
+\noindent\small{TIS \hfill Lic. Leticia Blanco}
+
+\end{titlepage}
+
+%
+% Hago que las páginas se comiencen a contar a partir de aquí:
+%
+\setcounter{page}{1}
+
+%
+% Pongo el índice en una página aparte:
+%
+%\tableofcontents
+%\newpage
+
+%
+% Inicio del TP:
+%
+
+\section{Acta de constituci\'on}
+%aqui va contenido
+
+\begin{center} 
+\textbf{ACTA DE CONSTITUCION}
+\end{center}
+
+
+\begin{tabular}{l p{7cm}}
+\textbf{Lugar y fecha:} &  Cochabamba, Estado Plurinacional de Bolivia, 28 de Agosto 2013. \\
+\textbf{Nombre de la grupo-empresa:} & Cassiopeia S.R.L. \\
+\textbf{Nombre del representante legal:} &  Ronald Alejandro Oquendo Muñoz \\
+\textbf{Direccion de la grupo-empresa:} &  c. Virreynato de Lima \#1621 entre Diego de Almagro y Francisco Pizarro. \\
+\end{tabular} \\
+
+
+\begin{tabular}{l l}
+\textbf{Socio 1.} \\
+\textbf{Nombre:} & Lopez Choque Franz Alberto\\
+\textbf{Edad:} &  26\\
+\textbf{Estado civil:} & Soltero\\
+\textbf{Profesion:} & Estudiante de Ing. de Sistemas\\
+\textbf{Direccion:} & Av. Humberto Arce Guzman s/n\\[2ex]
+
+\textbf{Socio 2.} \\
+\textbf{Nombre:} & Oquendo Muñoz Ronald Alejandro\\
+\textbf{Edad:} & 28\\
+\textbf{Estado civil:} & Soltero\\
+\textbf{Profesion:} & Estudiante de Ing. de Sistemas\\
+\textbf{Direccion:} & c. Virreynato de Lima \#1621\\[2ex]
+
+\textbf{Socio 3.} \\
+\textbf{Nombre:} & Ramirez Iriarte Elvis Rogelio\\
+\textbf{Edad:} & 22\\
+\textbf{Estado civil:} & Soltero\\
+\textbf{Profesion:} & Estudiante de Ing. de Sistemas\\
+\textbf{Direccion:} & Av. Arquimides y Trojes \#0956\\[2ex]
+\end{tabular} \\
+
+
+\subsection{Informacion de la grupo-empresa.}
+
+\textbf{Giro o razon social.-} La Sociedad girara bajo la denominacion de \guillemotleft Cassiopeia S.R.L.\guillemotright \\
+
+\textbf{Monto de las cuotas de capital.-}
+El capital de la sociedad es de Seicientos Mil 00/100  bolivianos (Bs 600.000.-) \\
+% Socio, Aporte de capital, Numero de cuotas, Participacion porcentual
+
+\begin{tabular}{| l | p{2.5cm} | p{1.5cm} | p{2.5cm} |}
+\hline
+Socio & Aporte de capital &  Numero de cuotas & Participacion porcentual \\
+\hline
+Lopez Choque Franz Alberto     & 200.000 & 10 &        20\% \\
+\hline
+Oquendo Muñoz Ronald Alejandro & 200.000 & 10 &        20\% \\
+\hline
+Ramirez Iriarte Elvis Rogelio  & 200.000 & 10 &        20\% \\
+\hline
+\end{tabular} \\
+%(participacion de los socios en porcentajes) esta dividido entre los 5 integrantes
+
+
+\subsubsection{Plazo de duracion} La sociedad tendra una duracion de 50 años computables a partir de la fecha de inscripcion en el Registro de Comercio. 
+
+\subsubsection{Organigrama}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{organigrama.jpg}
+\caption{}
+\label{graf}
+\end{figure}
+
+\subsubsection{Responsabilidades}
+
+Las decisiones del grupo-empresa se tomaran mediante un
+consenso, constituyéndose en una organización democrática.
+Las reglas de consenso para la toma de decisiones se regulan en los
+siguientes artículos.
+La votación se realiza con la Totalidad de los miembros de la Grupo-
+Empresa \guillemotleft Cassiopeia S.R.L.\guillemotright 
+1. Cada miembro del grupo empresa, incluyendo al representante Legal emite su voto a favor o en contra.
+2. Si más de dos votos se inclinan hacia una postura ya indicada, se acata la decisión.
+3. En caso de empate en la votación, el Representante Legal emite el voto de desnivel para acatar la decisión.
+
+%(
+
+% organigrama - jerarquia, miembros empresa
+% responsabilidades:  manuales de funciones - (desarrollador, ventas, calidad descripcion de lo que hace el trabajador), manual de procedimientos.
+ 
+% roles: mapa de procesos: jerarquia, clave (area de produccion), apoyo y estrategico
+
+% forma de la toma de decisiones: manual de procesos, dice con quienes se va a relacionar, proveedor y cliente, proveedor de herramientas son los 3ros 
+  
+%convocatoria a reuniones de grupo: POA, plan operativo anual, planes estrategicos
+
+% )
+
+\subsubsection{Previsiones para reservas} 
+Se establecerá una reserva legal del cinco por ciento (5\%) como mínimo de las utilidades efectivas y líquidas obtenidas.
+%La prevision para reserva se establecera en un 15\% del capital.
+%materia prima, personal cualificado, (se lleva en metodos reingenieria, estudio de tiempos) almacen, inventario, tiempos. deaccuerod al tiempo que se produce.
+
+%\subsection{Derechos y obligaciones de los accionistas}
+
+\subsubsection{Derechos} 
+Cada cuota de capital otorga a su propietario derecho a un voto en toda reunion y desicion de los consocios respecto a la Sociedad; asimismo, la utilidad o perdida que hubiere sera distribuida entre los socios en proporcion al capital que tuviesen aportado \\
+
+\subsubsection{Obligaciones} 
+Todos los socios contraen las siguientes obligaciones: 
+\begin{itemize}
+\item Debe contribuir en relación a su capacidad al desarrollo y progreso de la Sociedad mediante su orientación, consejos y sugerencias.
+\item Debe acatar las resoluciones de las Asambleas de Socios y cumplir las estipulaciones del presente contrato de constitución de Sociedad y todas aquellas disposiciones pertinentes del Código de Comercio y demás leyes del país.
+\end{itemize}
+
+%************************************
+%Disolucion, liquidacion y arbitraje: Disolucion, como se va a dividir, de acuerdo a los porcentajes.
+
+\subsubsection{Disolucion} La sociedad podra disolverse por las siguientes causas:
+
+\begin{itemize}
+\item Por acuerdo de socios, cuyos votos representen dos terceras partes (2/3) del capital social.
+\item Por perdida del mas del cincuenta por ciento (50\%) del capital social y reservas.
+\item Por quiebra declarada judicialmente, exceptuando la suscripcion de un acuerdo de restructuracion
+\end{itemize}
+
+\subsubsection{Liquidacion} 
+De decidirse u operarse la disolucion de la sociedad, la Asamblea Extraordinaria designara un Liquidador o una Comision Liquidadora que podra estar integrada por tres liquidadores, socios o no, de quienes se fijara su remuneracion.
+Sus funciones son las de celebrar los actos  necesarios con el objeto de realizar el activo y cancelar el pasivo, asi como disponer de los buenes sociales con buenas facultades, cubrir las obligaciones y distribuir el patrimonio que resultase entre los socios en proporcion a sus respectivas cuotas de capital.
+Adicionalmente se acuerda que:
+\begin{itemize}
+\item Tanto la designacion como la eventual remocion del Liquidador o de la Comision Liquidadora se hara por simple mayoria de votos en Asamblea Extraordinaria a la que concurran socios que representen por lo menos la mitad mas uno del capital social.
+\item El liquidador o la Comision Liquidadora asumira la representacion de la sociedad con plenitud de facultades conforme a un poder expreso notariado.
+\item El liquidador o la Comision Liquidadora debera informar por escrito y semanalmente a los socios, acerca del proceso de la liquidacion.
+\item Una vez cubiertas todas las obligaciones de la sociedad, el remanente sera distribuido por el o los liquidadores a prorrata entre los socios, de acuerdo a las cuotas de capital que posean.
+\item La sociedad en fase de liquidacion, mantendra su personalidad juridica para ese fin.
+\end{itemize}
+
+\subsubsection{Arbitraje}
+ Todas las divergencias que se susciten entre los socios o entre la sociedad y los socios, con motivo del contrato social o las resoluciones de los organos de la sociedad, sera resuelta mediante procedimiento arbitral establecido por la Ley No. 1770 de 10 de Marzo de 1997 (Ley de Arbitraje y Conciliacion).
+
+
+%\begin{figure}[b]
+%\centering
+%\includegraphics[scale=0.2]{figura1}
+%\caption{}
+%\label{graf}
+%\end{figure}
+\end{document}
+
