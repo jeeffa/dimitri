@@ -1,0 +1,1 @@
+aspell  --encoding=iso-8859-1 -l es  -t check carta_de_presentacion_02.tex

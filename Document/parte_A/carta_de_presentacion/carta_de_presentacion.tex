@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Plantilla para una carta en LaTeX, en español.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+%\let\@texttop\relax
+%\makeatother
+
+\documentclass[10pt]{letter}
+%\topmargin = 10pt
+% Esto es para poder escribir acentos directamente:
+\usepackage[latin1]{inputenc}
+% Esto es para que el LaTeX sepa que la carta está en español:
+\usepackage[spanish]{babel}
+% para el membrete
+\usepackage{wallpaper}
+\ULCornerWallPaper{1}{membrete_bw.pdf}
+
+%\address{R. Alejandro Oquendo M.\\
+%  Cassiopedia S.R.L. \\
+%  Virreynato de Lima \#1621 \\
+%  Cochabamba - Bolivia}
+
+\signature{Ronald Alejandro Oquendo M. \\ REPRESENTANTE LEGAL}
+
+\begin{document}
+
+\begin{letter}{  
+Señora \\
+Lic. Leticia Blanco \\
+Consultora de Proyecto de TIS \\[2ex]
+ 
+Campus las Cuadras \\
+Universidad Mayor de San Simón \\
+\underline{Presente} \\[2ex]
+
+Ref: Carta de presentación}
+
+\opening{Estimada Licenciada,}
+
+Por medio de la presente, nos es grato dirigirnos a su distinguida persona para hacerle llegar nuestro más cordial saludo y ponernos a su disposición como grupo-empresa que provee soluciones de ingeniería de software.
+
+Cassiopeia S.R.L. cuenta con ingenieros cualificados en distintas áreas relacionadas a las ciencias de la computación, con mucha experiencia en el desarrollo de software, asegurando la calidad del producto y dando cumplimiento a las exigencias del cliente. Consideramos que somos la empresa adecuada para cumplir con las expectativas de la convocatoria, y es nuestro mas sincero deseo  de ser participes en el desarrollo del Sistema especificado. Así mismo y de acuerdo a vuestro requerimiento adjuntamos la siguiente documentación: Carta de presentación; Boleta de garantía; Conformación de la grupo-empresa; Solvencia técnica y Propuesta técnica.
+
+Estaremos agradecidos de su amable aceptación por la participación de nuestra grupo-empresa.
+
+
+\closing{Sin otro particular le saludamos muy cordialmente,}
+\cc{Archivo}
+
+% poner indice
+
+\end{letter}
+\end{document}
+
