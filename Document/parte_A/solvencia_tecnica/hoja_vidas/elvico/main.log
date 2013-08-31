@@ -1,21 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.7.26)  29 AUG 2013 16:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  31 AUG 2013 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./moderncv.cls
 Document Class: moderncv 2013/02/09 v1.3.0 modern curriculum vitae and letter d
 ocument class
@@ -318,24 +308,25 @@ Package: xparse 2013/03/12 v4467 L3 Experimental document command parser
 \l__xparse_v_nesting_int=\count113
 )
 (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2013/03/13 v2.5 Micro-typographical refinements (RS)
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks15
 \MT@count=\count114
-LaTeX Info: Redefining \textls on input line 771.
+LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen137
-LaTeX Info: Redefining \textmicrotypecontext on input line 1290.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count115
 
 (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2013/03/13 v2.5 Definitions specific to pdftex (RS)
-LaTeX Info: Redefining \lsstyle on input line 889.
-LaTeX Info: Redefining \lslig on input line 889.
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
 \MT@outer@space=\skip59
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2013/03/13 v2.5 microtype main configuration file (RS)
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 (./moderncvcompatibility.sty
 Package: moderncvcompatibility 2013/02/09 v1.3.0 modern curriculum vitae and le
@@ -409,14 +400,13 @@ LaTeX Font Info:    Try loading font information for U+mvs on input line 68.
 \cvitemwithcommentmainbox=\box41
 \cvitemwithcommentmainlength=\skip75
 \cvitemwithcommentcommentlength=\skip76
-) (./moderncvcolorred.sty
-Package: moderncvcolorred 2013/02/09 v1.3.0 modern curriculum vitae and letter 
-color scheme: red
+) (./moderncvcolorblack.sty
+Package: moderncvcolorblack 2013/02/09 v1.3.0 modern curriculum vitae and lette
+r color scheme: black
 ) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
@@ -863,7 +853,7 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
 (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2011/04/09 v2.1 microtype config. file: Computer Modern Roman 
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 *geometry* driver: auto-detecting
@@ -874,15 +864,15 @@ File: mt-cmr.cfg 2011/04/09 v2.1 microtype config. file: Computer Modern Roman
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(46.07025pt, 522.1545pt, 46.07025pt)
-* v-part:(T,H,B)=(47.69626pt, 675.72934pt, 71.54439pt)
+* h-part:(L,W,R)=(33.7864pt, 546.72217pt, 33.78642pt)
+* v-part:(T,H,B)=(34.97885pt, 707.5228pt, 52.46834pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=522.1545pt
-* \textheight=675.72934pt
-* \oddsidemargin=-26.19974pt
-* \evensidemargin=-26.19974pt
-* \topmargin=-61.57373pt
+* \textwidth=546.72217pt
+* \textheight=707.5228pt
+* \oddsidemargin=-38.48358pt
+* \evensidemargin=-38.48358pt
+* \topmargin=-74.29114pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -952,7 +942,7 @@ File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
 \makecvtitlepicturebox=\box45
 
-<elvis.jpg, id=33, 1480.53125pt x 1968.35374pt>
+<elvis.jpg, id=37, 1480.53125pt x 1968.35374pt>
 File: elvis.jpg Graphic file (type jpg)
  <use elvis.jpg>
 Package pdftex.def Info: elvis.jpg used on input line 23.
@@ -976,23 +966,23 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./elvis.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8848614E35E56E84716BD5A809C379D2;902.
+(rerunfilecheck)             Checksum: 96185086FDA179F0C460B083D4004FA2;932.
  ) 
 Here is how much of TeX's memory you used:
- 17068 strings out of 493488
- 270247 string characters out of 3146892
- 374391 words of memory out of 3000000
- 20101 multiletter control sequences out of 15000+200000
- 64712 words of font info for 64 fonts, out of 3000000 for 9000
+ 17072 strings out of 493315
+ 270249 string characters out of 6143704
+ 380115 words of memory out of 5000000
+ 20245 multiletter control sequences out of 15000+600000
+ 64913 words of font info for 66 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,11n,45p,793b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,45p,793b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf-dist/fo
 nts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr
 10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf
@@ -1002,10 +992,10 @@ e/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1
 /public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro17.pfb><
 /usr/share/texmf-dist/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf-dist/fo
 nts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (1 page, 956464 bytes).
+Output written on main.pdf (1 page, 958131 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 22590 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 22598 words of extra memory for PDF output out of 24883 (max. 10000000)
 

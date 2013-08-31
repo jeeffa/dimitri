@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  31 AUG 2013 13:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  31 AUG 2013 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,8 +137,10 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \tileheight=\skip51
 \tileX=\skip52
 \tileY=\skip53
+) (./caratula.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
 )
-No file caratula.aux.
 \openout1 = `caratula.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -155,6 +157,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Info: Redefining \. on input line 18.
 LaTeX Info: Redefining \% on input line 18.
+
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count95
@@ -235,16 +238,16 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 3017 strings out of 493315
- 40404 string characters out of 6143704
+ 3020 strings out of 493315
+ 40438 string characters out of 6143704
  112268 words of memory out of 5000000
- 6448 multiletter control sequences out of 15000+600000
+ 6449 multiletter control sequences out of 15000+600000
  4860 words of font info for 18 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,14n,39p,248b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on caratula.pdf (1 page, 49942 bytes).
+Output written on caratula.pdf (1 page, 49962 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
