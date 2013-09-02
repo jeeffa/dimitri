@@ -1,0 +1,92 @@
+\section{PROPUESTA DE SERVICIOS}
+
+\subsection{PROPÓSITO}
+La presente propuesta técnica tiene como propósito exponer nuestra alternativa de solución al problema de la empresa de TIS para una juez virtual para la Olimpiada Internacional de Informatica. Además el documento servirá de guía para el proceso de desarrollo del producto de software y formará parte indivisible del contrato estipulado entre la empresa TIS y el proponente, esperando que cumpla y satisfaga con las exigencias emitidas por parte de la empresa licitante.
+
+\subsection{OBJETIVOS}
+
+\subsubsection{OBJETIVO GENERAL}
+
+Desarrollar un juez virtual, que funcione a nivel departamental, que permita a olimpistas enfrentarse en un modo de evaluacion, como el que se usa la competencia mundial.
+
+\subsubsection{OBJETIVO ESPECÍFICOS}
+\begin{itemize}
+    \item Desarrollo de componentes de gestion de usuarios. %anadir, modificar, quitar usuarios, generar reportes de usuarios
+    \item Desarrollo de componentes de gestion de evaluacion. %
+    \item Desarrollo de componentes de evaluador de problemas.% recibe solucion, corre casos de prueba, y contabiliza el resultados
+    \item Desarrollo de componentes del modulo de competicion.% lleva a cabo una competicion, controla el tiempo, registra puntajes de los equipos
+    \item Desarrollo de componentes del modulo de practicas % Este permite a un equipo o olimpista a practicar localmente, sin necesidad de estar en una competicion, es parecido al modulo de competicion. (pueden heredar funcionalidades de una clase padre)
+
+\end{itemize}
+
+\subsubsection{TECNOLOGIA A UTILIZAR}
+Para el cumplimiento de los objetivos de esta propuesta y las condiciones
+establecidas en el pliego de especificaciones de la empresa TIS, se ha
+considerado desarrollar el sistema web de administración de cursos y notas,
+con las siguientes herramientas de software:
+
+\begin{center}
+    \begin{tabular}{|l|l|c|}
+    \hline
+    \textbf{Herramienta}    & \textbf{Software}  \\
+    \hline
+    Servidor web                        & Apache web server   \\
+    Gestor de base de datos             & MySQL               \\
+    Lenguaje de programación            & PHP                 \\
+    Librerias de apoyo                  & Symphony            \\
+                                        & jQuery              \\
+    Sistema de Control de Versiones     & Git                 \\
+    Entorno integrado de desarrollo     & Netbeans            \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Tipos de usuarios}
+\begin{enumerate}
+    \item Olimpista.
+    \item Administrador.
+    \item Miembro de comite academico.
+\end{enumerate}
+
+\subsection{Funcionalidades globales}
+\begin{description}
+    \item[Gestión de usuarios]
+    Componente encargado de la gestión de usuarios...
+    \item[Gestión de evaluacion]
+    Componente que recibe una solucion a un problema y la evalua, luego devuelve un puntaje equivalente.
+    \item[Gestión de equipos] %hay equipos en las olimpiadas??
+    Componente encargado de la gestion de equipos de trabajo entre los
+    usuarios del sistema.
+    \item[]
+    \item[]
+    \item[Reporte de ranking de olimpiadas]
+    %\item[Seleccion del tipo de participacion que puede ser competicion o practica]
+    \item[Modo de practica en la olimpiada]
+    \item[Modo de competencia en la olimpiada]
+    \item[Gestion de problemas]
+    Permite la subida problemas, modificacion, dar de baja.
+    \item[Gestion de competicion]
+    Crear comp (anadir olimpistas), iniciar competicion, finalizar, generacion de reportes
+    % Gestion de problemas
+    % Gestion de evaluacion
+    % Reportes: Ranking, Estadisticas de problemas
+    % 
+\end{description}
+
+\subsubsection{MODULOS DEL SISTEMA}
+Una vez desarrollado el sub-sistema administrador de modulos, esta
+herramienta será provista de los modulos necesarios para gestionar
+los siguientes elementos:
+\begin{itemize}
+    \item Ficheros.
+    \item Avisos, actividaddes y eventos.
+    \item Generación dinamica de contenido.
+    \item Foros.
+    \item Valoraciones de usuarios.
+    \item Comentarios.
+    \item Busquedas.
+    \item Etiquetas dinamicas.
+    \item Evaluaciones y calificaciones.
+\end{itemize}
+
+
