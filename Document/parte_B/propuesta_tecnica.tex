@@ -1,7 +1,35 @@
+\documentclass{article}
+\usepackage[latin1]{inputenc}
+\usepackage{wallpaper}
+%\usepackage[letterpaper,headheight=16pt,scale={0.7,0.8},hoffset=0.5cm]{geometry}
+\usepackage[letterpaper]{geometry}
+\usepackage[spanish]{babel}
+
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\usepackage[hang,bf]{caption}
+\pagestyle{empty}
+
+%\usepackage[pdftex]{graphicx}
+%\pdfcompresslevel=9
+
+\newcommand{\imgdir}{includes}
+\graphicspath{{\imgdir/}}
+
+\topmargin 0in
+
+\ULCornerWallPaper{1}{membrete_bw.pdf}
+
+\begin{document}
+
+
 \section{PROPUESTA DE SERVICIOS}
 
-\subsection{PROP√ìSITO}
-La presente propuesta t√©cnica tiene como prop√≥sito exponer nuestra alternativa de soluci√≥n al problema de la empresa de TIS para una juez virtual para la Olimpiada Internacional de Informatica. Adem√°s el documento servir√° de gu√≠a para el proceso de desarrollo del producto de software y formar√° parte indivisible del contrato estipulado entre la empresa TIS y el proponente, esperando que cumpla y satisfaga con las exigencias emitidas por parte de la empresa licitante.
+\subsection{PROPOSITO}
+La presente propuesta tÈcnica tiene como propÛsito exponer nuestra alternativa de soluciÛn al problema de la empresa de TIS para una juez virtual para la Olimpiada Internacional de Informatica. Adem·s el documento servir· de guÌa para el proceso de desarrollo del producto de software y formar· parte indivisible del contrato estipulado entre la empresa TIS y el proponente, esperando que cumpla y satisfaga con las exigencias emitidas por parte de la empresa licitante.
 
 \subsection{OBJETIVOS}
 
@@ -9,7 +37,7 @@ La presente propuesta t√©cnica tiene como prop√≥sito exponer nuestra alternativa
 
 Desarrollar un juez virtual, que funcione a nivel departamental, que permita a olimpistas enfrentarse en un modo de evaluacion, como el que se usa la competencia mundial.
 
-\subsubsection{OBJETIVO ESPEC√çFICOS}
+\subsubsection{OBJETIVO ESPECÕFICOS}
 \begin{itemize}
     \item Desarrollo de componentes de gestion de usuarios. %anadir, modificar, quitar usuarios, generar reportes de usuarios
     \item Desarrollo de componentes de gestion de evaluacion. %
@@ -22,7 +50,7 @@ Desarrollar un juez virtual, que funcione a nivel departamental, que permita a o
 \subsubsection{TECNOLOGIA A UTILIZAR}
 Para el cumplimiento de los objetivos de esta propuesta y las condiciones
 establecidas en el pliego de especificaciones de la empresa TIS, se ha
-considerado desarrollar el sistema web de administraci√≥n de cursos y notas,
+considerado desarrollar el sistema web de administraciÛn de cursos y notas,
 con las siguientes herramientas de software:
 
 \begin{center}
@@ -32,7 +60,7 @@ con las siguientes herramientas de software:
     \hline
     Servidor web                        & Apache web server   \\
     Gestor de base de datos             & MySQL               \\
-    Lenguaje de programaci√≥n            & PHP                 \\
+    Lenguaje de programaciÛn            & PHP                 \\
     Librerias de apoyo                  & Symphony            \\
                                         & jQuery              \\
     Sistema de Control de Versiones     & Git                 \\
@@ -50,11 +78,11 @@ con las siguientes herramientas de software:
 
 \subsection{Funcionalidades globales}
 \begin{description}
-    \item[Gesti√≥n de usuarios]
-    Componente encargado de la gesti√≥n de usuarios...
-    \item[Gesti√≥n de evaluacion]
+    \item[GestiÛn de usuarios]
+    Componente encargado de la gestiÛn de usuarios...
+    \item[GestiÛn de evaluacion]
     Componente que recibe una solucion a un problema y la evalua, luego devuelve un puntaje equivalente.
-    \item[Gesti√≥n de equipos] %hay equipos en las olimpiadas??
+    \item[GestiÛn de equipos] %hay equipos en las olimpiadas??
     Componente encargado de la gestion de equipos de trabajo entre los
     usuarios del sistema.
     \item[]
@@ -75,12 +103,12 @@ con las siguientes herramientas de software:
 
 \subsubsection{MODULOS DEL SISTEMA}
 Una vez desarrollado el sub-sistema administrador de modulos, esta
-herramienta ser√° provista de los modulos necesarios para gestionar
+herramienta ser· provista de los modulos necesarios para gestionar
 los siguientes elementos:
 \begin{itemize}
     \item Ficheros.
     \item Avisos, actividaddes y eventos.
-    \item Generaci√≥n dinamica de contenido.
+    \item GeneraciÛn dinamica de contenido.
     \item Foros.
     \item Valoraciones de usuarios.
     \item Comentarios.
@@ -150,7 +178,7 @@ El plan de pagos se detalla a continuacion, sin tomar en cuenta la tasa de inter
 \subsection{Costos operativos}
 Estos costos se refieren a los servicios basicos y otros suministros, un calculo aproximado en bolivianos por mes ser\'ia:
 
-\begin{tabular}
+\begin{tabular}{|l|l|}
 \hline
 Luz & 300 \\
 \hline
@@ -169,23 +197,23 @@ Agua embotellada & 40 \\
 \end{tabular}
 
 \subsection{Costos del personal}
-Estos costos se refieren al salario del personal de la empresa, un calculo aproximado en bolivinos por mes ser\'ia:
+Estos costos se refieren al salario del personal de la empresa, un calculo aproximado en bolivinos por mes ser\'ia:\\
 
-\begin{tabular}
+\begin{tabular}{|l|l|}
 \hline
-Gerente general & 6960
+Gerente general & 6960 \\
 \hline
-Secretaria & 2784
+Secretaria & 2784 \\
 \hline
-Limpieza & 1044
+Limpieza & 1044 \\ 
 \hline
-Administracion & 4176
+Administracion & 4176 \\
 \hline
-Contabilidad & 3480
+Contabilidad & 3480 \\
 \hline
-Ingenieros (3) & 14616
+Ingenieros (3) & 14616 \\
 \hline
-\bfline{Total} & 33060
+\textbf{Total} & 33060 \\
 \hline
 \end{tabular}
 
@@ -193,26 +221,37 @@ Ingenieros (3) & 14616
 Nuestro grupo-empresa realizara el desarrollo del sistema por 29.5 horas a la semana segun nuestro calendario definido en la parte A. Tambien se toma en cuenta que el proyecto esta programado para realizarse durante 15 semanas.
 
 Horas totales a trabajarse en el proyecto:
+\begin{displaymath}
 29.5 * 15 = 442.5 Horas
+\end{displaymath} 
 
 Suma de costos del personal y los costos operativos:
+\begin{displaymath}
 33060 + 1690 = 34750 Bs.
+\end{displaymath}
 
 En el siguiente calculo se detalla el costo por hora:
+\begin{displaymath}
 ((34750) / 22 horas laborales ) / 8 horas al dia = 197.44 Bs./Hora
+\end{displaymath}
 
 Costo total del producto:
+\begin{displaymath}
 197.44 Bs./Hora * 442.5 Horas = 87367.2 Bs.
+\end{displaymath}
 
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Costo} & \textbf{Importe (Bs.)}\\
+\hline
+Costo total & 87367.2 \\
+\hline
+Precio de venta incluyendo utilidades (20\%) & 17473.44 \\
+\hline
+\textbf{Precio final} & \textbf{104840.64} \\
+\hline
+\end{tabular} \\
 
-\begin{tabular}
-\hline
-\hline
-\hline
-\hline
-\hline
-\hline
-\hline
-\hline
+El precio final ser\'ia de Cien mil cuatro ochocientos cuarenta 64/100 Bs 
 
-
+\end{document}
