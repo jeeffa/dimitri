@@ -41,36 +41,41 @@ Desarrollar un juez virtual, que funcione a nivel departamental, que permita a o
 \subsubsection{Objetivos específicos}
 \begin{itemize}
     \item Desarrollo de componentes de gestión de usuarios. %anadir, modificar, quitar usuarios, generar reportes de usuarios
-    \item Desarrollo de componentes de gestión de evaluación. %
-    \item Desarrollo de componentes de evaluador de problemas.% recibe solucion, corre casos de prueba, y contabiliza el resultados
-    \item Desarrollo de componentes del modulo de competición.% lleva a cabo una competicion, controla el tiempo, registra puntajes de los equipos
-    \item Desarrollo de componentes del modulo de practicas % Este permite a un equipo o olimpista a practicar localmente, sin necesidad de estar en una competicion, es parecido al modulo de competicion. (pueden heredar funcionalidades de una clase padre)
+    \item Desarrollo de componentes del modulo de evaluador. %
+%    \item Desarrollo de componentes de evaluador de problemas.% recibe solucion, corre casos de prueba, y contabiliza el resultados
+    \item Desarrollo de componentes del gestión de competición.% lleva a cabo una competicion, controla el tiempo, registra puntajes de los equipos
+    \item Desarrollo de componentes del gestión de problemas 
+    %\item Integracion de todos los componentes
+    \item Realizacion de la gestión de calidad del sistema integrado
+% Practicas - Este permite a un equipo o olimpista a practicar localmente, sin necesidad de estar en una competicion, es parecido al modulo de competicion. (pueden heredar funcionalidades de una clase padre)
 
 \end{itemize}
 
 \subsubsection{Tecnología a utilizar}
-Para el cumplimiento de los objetivos de esta propuesta y las condiciones
-establecidas en el pliego de especificaciones de la empresa TIS, se ha
-considerado desarrollar el sistema web de administración de cursos y notas,
-con las siguientes herramientas de software:
+Para el cumplimiento de los objetivos de esta propuesta y las condiciones establecidas en el pliego de especificaciones de la empresa TIS, se ha considerado desarrollar el sistema del \guillemotleft Juez Virtual\guillemotright con las siguientes herramientas de software:
 
 \begin{center}
-    \begin{tabular}{|l|l|c|}
+    \begin{tabular}{|l|l|}
     \hline
     \textbf{Herramienta}    & \textbf{Software}  \\
     \hline
-    Servidor web                        & Apache web server   \\
+    Servidor web                        & Apache              \\
     Gestor de base de datos             & MySQL               \\
     Lenguaje de programación            & PHP                 \\
-    Librerías de apoyo                  & Symphony            \\
-                                        & jQuery              \\
-    Sistema de Control de Versiones     & Git                 \\
+    Framework de apoyo                  & Symfony             \\
+    Biblioteca de apoyo                 & jQuery              \\
+    Sistema de control de versiones     & Git                 \\
     Entorno integrado de desarrollo     & Netbeans            \\
+    Composici\'on de documentaci\'on    & \LaTeX              \\
+    Editor de texto plano               & vim                 \\
     \hline
     \end{tabular}
-\end{center}
+\end{center} 
 
-\subsection{Tipos de usuarios}
+Las versiones a ser utilizadas de Apache, MySQL y PHP seran definidas de acuerdo al software instalado en el laboratorio de TIS.
+
+
+\subsection{Tipos de usuarios} \label{users}
 \begin{enumerate}
     \item Olimpista.
     \item Administrador.
@@ -80,29 +85,24 @@ con las siguientes herramientas de software:
 \subsection{Funcionalidades globales}
 \begin{description}
     \item[Gestión de usuarios]
-    Componente encargado de la gestión de usuarios...
-    \item[Gestión de evaluación]
-    Componente que recibe una solución a un problema y la evalúa, luego devuelve un puntaje equivalente.
-    \item[Gestión de equipos] %hay equipos en las olimpiadas??
-    Componente encargado de la gestión de equipos de trabajo entre los
-    usuarios del sistema.
-    \item[]
-    \item[]
-    \item[Reporte de ranking de olimpiadas]
+    La gestion de usuarios consta de la creacion, modificacion y depuracion de usuarios, los tipos de usuarios se especifican en  \ref{users}. Cada tipo de usuario tendra establecido sus privilegios con respecto al Sistema.
+    \item[Modulo evaluador]
+    Consta de un sub-sistema que recibe una solución a un problema y ejecuta los casos de prueba correspondientes al problema, luego devuelve un puntaje de acuerdo a los resultados de la ejecucion de los casos de prueba. 
+    \item[Gestión de competición] 
+    Permite crear una competicion entre olimpistas, se podra seleccionar el modo de la competicion, es decir si la competicion va ser verdadera o solo sera una practica. Una vez creada la competicion se la podra dar inicio y tambien se la podra finalizar. Tambien se contempla la creacion de reportes relacionados a la competicion, como ser un ranking de una competicion determinada.
+    \item[Gestión problemas]
+    Permite la subida nuevos problemas, la modificación de problemas y dar de baja un problema.
     %\item[Seleccion del tipo de participacion que puede ser competicion o practica]
-    \item[Modo de practica en la olimpiada]
-    \item[Modo de competencia en la olimpiada]
-    \item[Gestión de problemas]
-    Permite la subida problemas, modificación, dar de baja.
-    \item[Gestión de competición]
-    Crear comp (añadir olimpistas), iniciar competición, finalizar, generación de reportes
+%    \item[Modo de practica en la olimpiada]
+%    \item[Modo de competencia en la olimpiada]
+%    \item[Gestión de problemas]
     % Gestion de problemas
     % Gestion de evaluacion
     % Reportes: Ranking, Estadisticas de problemas
     % 
 \end{description}
 
-\subsubsection{MÓDULOS DEL SISTEMA}
+\subsubsection{Modulos del sistema}
 Una vez desarrollado el sub-sistema administrador de módulos, esta
 herramienta será provista de los módulos necesarios para gestionar
 los siguientes elementos:
@@ -118,49 +118,57 @@ los siguientes elementos:
     \item Evaluaciones y calificaciones.
 \end{itemize}
 
+\section{Plazo de conclusi\'on del contrato}
+Una vez entregado el software y firmado un documento de conformidad por parte de la empresa TIS, se dar\'a por concluida la relaci\'on contractual con la empresa TIS. Tales acciones en ning\'un caso podr\'an exceder el d\'ia 6 de diciembre del 2013.
+
 \section{Propuesta económica}
 
 \subsection{Costos operativos}
 Estos costos se refieren a los servicios básicos y otros suministros, un calculo aproximado en bolivianos por mes ser\'ia:\\
 
-\begin{tabular}{|l|r|}
-\hline
-Luz & 300 \\
-\hline
-Agua & 150 \\ 
-\hline
-Internet & 1000 \\
-\hline
-Teléfono & 100 \\ 
-\hline
-Suministros de oficina & 100 \\
-\hline
-Agua embotellada & 40 \\
-\hline
-\textbf{Total} & 1690 \\
-\hline
-\end{tabular}
+\begin{center}
+  \begin{tabular}{|l|r|}
+  \hline
+  Luz & 300 \\
+  \hline
+  Agua & 150 \\ 
+  \hline
+  Internet & 1000 \\
+  \hline
+  Teléfono & 100 \\ 
+  \hline
+  Suministros de oficina & 100 \\
+  \hline
+  Agua embotellada & 40 \\
+  \hline
+  \textbf{Total} & 1690 \\
+  \hline
+  \end{tabular}
+\end{center}
+
 
 \subsection{Costos del personal}
 Estos costos se refieren al salario del personal de la empresa, un calculo aproximado en bolivianos por mes ser\'ia:\\
 
-\begin{tabular}{|l|r|}
-\hline
-Gerente general & 6960 \\
-\hline
-Secretaria & 2784 \\
-\hline
-Limpieza & 1044 \\ 
-\hline
-Administración & 4176 \\
-\hline
-Contabilidad & 3480 \\
-\hline
-Ingenieros (3) & 14616 \\
-\hline
-\textbf{Total} & 33060 \\
-\hline
-\end{tabular}
+\begin{center}
+  \begin{tabular}{|l|r|}
+  \hline
+  Gerente general & 6960 \\
+  \hline
+  Secretaria & 2784 \\
+  \hline
+  Limpieza & 1044 \\ 
+  \hline
+  Administración & 4176 \\
+  \hline
+  Contabilidad & 3480 \\
+  \hline
+  Ingenieros (3) & 14616 \\
+  \hline
+  \textbf{Total} & 33060 \\
+  \hline
+  \end{tabular}
+\end{center}
 
 \subsection{Costo total}
 Nuestro grupo-empresa realizara el desarrollo del sistema por $20.45$ horas a la semana según nuestro calendario definido en la parte A. También se toma en cuenta que el proyecto esta programado para realizarse durante 17 semanas, incluyendo la realización de la propuesta.
@@ -185,33 +193,38 @@ Calculo del costo total:
 $197.44$ Bs./Hora $ * 347.65$ Horas $= 68641.12$ Bs.
 \end{center}
 
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Costo} & \textbf{Importe (Bs.)}\\
-\hline
-Costo total & 68641,12 \\
-\hline
-Precio de venta incluyendo utilidades (20\%) & 13728,22 \\
-\hline
-\textbf{Precio final} & \textbf{82369,34} \\
-\hline
-\end{tabular} \\
+\begin{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Costo} & \textbf{Importe (Bs.)}\\
+    \hline
+    Costo total & 68641,12 \\
+    \hline
+    Precio de venta incluyendo utilidades (20\%) & 13728,22 \\
+    \hline
+    \textbf{Precio final} & \textbf{82369,34} \\
+    \hline
+  \end{tabular} \\
+\end{center} 
 
 El precio final ser\'ia de: Ochenta y Dos Mil Trescientos Sesenta y Nueve 34/100 Bs 
 
 \section{Plan de pagos}
 Los pagos se realizar\'an en la finalización de cada hito.\\
 
-\begin{tabular}{|l|l| r @{,} l |}
-\hline
-\textbf{Pago} & \textbf{Evento} & \multicolumn{2}{c|}{\textbf{Monto (Bs.)}}  \\
-\hline
-\hline
-1 & 1"er hito, 9 de septiembre & 8075&3 \\
-\hline
-2 & 2"er hito, 6 de diciembre  & 52489&42 \\
-\hline
-3 & 3"er hito, 20 de diciembre & 8076&73 \\
-\hline
-\end{tabular}
+\begin{center}
+  \begin{tabular}{|l|l| r @{,} l |}
+    \hline
+    \textbf{Pago} & \textbf{Evento} & \multicolumn{2}{c|}{\textbf{Monto (Bs.)}}  \\
+    \hline
+    \hline
+    1 & 1"er hito, 9 de septiembre & 8075&3 \\
+    \hline
+    2 & 2"er hito, 6 de diciembre  & 52489&42 \\
+    \hline
+    3 & 3"er hito, 20 de diciembre & 8076&73 \\
+    \hline
+  \end{tabular}
+\end{center}
+
 \end{document}
