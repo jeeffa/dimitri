@@ -26,28 +26,29 @@
 \begin{document}
 
 
-\section{PROPUESTA DE SERVICIOS}
+\section{Propuesta de servicios}
 
-\subsection{PROPOSITO}
-La presente propuesta técnica tiene como propósito exponer nuestra alternativa de solución al problema de la empresa de TIS para una juez virtual para la Olimpiada Internacional de Informatica. Además el documento servirá de guía para el proceso de desarrollo del producto de software y formará parte indivisible del contrato estipulado entre la empresa TIS y el proponente, esperando que cumpla y satisfaga con las exigencias emitidas por parte de la empresa licitante.
+\subsection{Propósito}
 
-\subsection{OBJETIVOS}
+La presente propuesta técnica tiene como propósito exponer nuestra alternativa de solución al problema de la empresa de TIS para una juez virtual para la Olimpiada Internacional de Informática. Además el documento servirá de guía para el proceso de desarrollo del producto de software y formará parte indivisible del contrato estipulado entre la empresa TIS y el proponente, esperando que cumpla y satisfaga con las exigencias emitidas por parte de la empresa licitante.
 
-\subsubsection{OBJETIVO GENERAL}
+\subsection{Objetivo}
 
-Desarrollar un juez virtual, que funcione a nivel departamental, que permita a olimpistas enfrentarse en un modo de evaluacion, como el que se usa la competencia mundial.
+\subsubsection{Objetivo general}
 
-\subsubsection{OBJETIVO ESPECÍFICOS}
+Desarrollar un juez virtual, que funcione a nivel departamental, que permita a olimpistas enfrentarse en un modo de evaluación, como el que se usa la competencia mundial.
+
+\subsubsection{Objetivos específicos}
 \begin{itemize}
-    \item Desarrollo de componentes de gestion de usuarios. %anadir, modificar, quitar usuarios, generar reportes de usuarios
-    \item Desarrollo de componentes de gestion de evaluacion. %
+    \item Desarrollo de componentes de gestión de usuarios. %anadir, modificar, quitar usuarios, generar reportes de usuarios
+    \item Desarrollo de componentes de gestión de evaluación. %
     \item Desarrollo de componentes de evaluador de problemas.% recibe solucion, corre casos de prueba, y contabiliza el resultados
-    \item Desarrollo de componentes del modulo de competicion.% lleva a cabo una competicion, controla el tiempo, registra puntajes de los equipos
+    \item Desarrollo de componentes del modulo de competición.% lleva a cabo una competicion, controla el tiempo, registra puntajes de los equipos
     \item Desarrollo de componentes del modulo de practicas % Este permite a un equipo o olimpista a practicar localmente, sin necesidad de estar en una competicion, es parecido al modulo de competicion. (pueden heredar funcionalidades de una clase padre)
 
 \end{itemize}
 
-\subsubsection{TECNOLOGIA A UTILIZAR}
+\subsubsection{Tecnología a utilizar}
 Para el cumplimiento de los objetivos de esta propuesta y las condiciones
 establecidas en el pliego de especificaciones de la empresa TIS, se ha
 considerado desarrollar el sistema web de administración de cursos y notas,
@@ -61,7 +62,7 @@ con las siguientes herramientas de software:
     Servidor web                        & Apache web server   \\
     Gestor de base de datos             & MySQL               \\
     Lenguaje de programación            & PHP                 \\
-    Librerias de apoyo                  & Symphony            \\
+    Librerías de apoyo                  & Symphony            \\
                                         & jQuery              \\
     Sistema de Control de Versiones     & Git                 \\
     Entorno integrado de desarrollo     & Netbeans            \\
@@ -73,17 +74,17 @@ con las siguientes herramientas de software:
 \begin{enumerate}
     \item Olimpista.
     \item Administrador.
-    \item Miembro de comite academico.
+    \item Miembro de comité académico.
 \end{enumerate}
 
 \subsection{Funcionalidades globales}
 \begin{description}
     \item[Gestión de usuarios]
     Componente encargado de la gestión de usuarios...
-    \item[Gestión de evaluacion]
-    Componente que recibe una solucion a un problema y la evalua, luego devuelve un puntaje equivalente.
+    \item[Gestión de evaluación]
+    Componente que recibe una solución a un problema y la evalúa, luego devuelve un puntaje equivalente.
     \item[Gestión de equipos] %hay equipos en las olimpiadas??
-    Componente encargado de la gestion de equipos de trabajo entre los
+    Componente encargado de la gestión de equipos de trabajo entre los
     usuarios del sistema.
     \item[]
     \item[]
@@ -91,94 +92,38 @@ con las siguientes herramientas de software:
     %\item[Seleccion del tipo de participacion que puede ser competicion o practica]
     \item[Modo de practica en la olimpiada]
     \item[Modo de competencia en la olimpiada]
-    \item[Gestion de problemas]
-    Permite la subida problemas, modificacion, dar de baja.
-    \item[Gestion de competicion]
-    Crear comp (anadir olimpistas), iniciar competicion, finalizar, generacion de reportes
+    \item[Gestión de problemas]
+    Permite la subida problemas, modificación, dar de baja.
+    \item[Gestión de competición]
+    Crear comp (añadir olimpistas), iniciar competición, finalizar, generación de reportes
     % Gestion de problemas
     % Gestion de evaluacion
     % Reportes: Ranking, Estadisticas de problemas
     % 
 \end{description}
 
-\subsubsection{MODULOS DEL SISTEMA}
-Una vez desarrollado el sub-sistema administrador de modulos, esta
-herramienta será provista de los modulos necesarios para gestionar
+\subsubsection{MÓDULOS DEL SISTEMA}
+Una vez desarrollado el sub-sistema administrador de módulos, esta
+herramienta será provista de los módulos necesarios para gestionar
 los siguientes elementos:
 \begin{itemize}
     \item Ficheros.
-    \item Avisos, actividaddes y eventos.
-    \item Generación dinamica de contenido.
+    \item Avisos, actividades y eventos.
+    \item Generación dinámica de contenido.
     \item Foros.
     \item Valoraciones de usuarios.
     \item Comentarios.
-    \item Busquedas.
-    \item Etiquetas dinamicas.
+    \item Búsquedas.
+    \item Etiquetas dinámicas.
     \item Evaluaciones y calificaciones.
 \end{itemize}
 
-\section{Plan de pagos}
-
-El plan de pagos se detalla a continuacion, sin tomar en cuenta la tasa de interes:
-
-% 600$ * 3 = 1800 * 3 meses = 5400
-
-% firma 900$ 
-% 1er hito 1800$
-% 2do hito 1800$
-% 3er hito 1800$
-
-% tomar en cuenta que no se trabajan 8 hrs. al dia
-% 15 semanas de trabajo en total
-% 6+5+5+2.5+6+5 = 29.5 horas a la semana
-% calculando sueldo sale 4$/hora
-% 4$ * 29.5 horas * 15 semanas * 3 personas = 5310$ total
-% 5310 * 1.20 de cuestiones adm = 6372$;
-
-%costos fijos = sueldos y salarios
-%costos var. = servicios basicos (luz, agua, internet, telefono), insumos (papaleria, agua botelln, suminitros oficina)
-%material de trabajo(limpieza)
-
-%activos fijos mensual
-%gerente gral  1000$
-%secretaria     600$ 
-%limpieza       200$
-%administracion 600$
-%contabilidad   400$
-%ingenieros     700$ * 3 
-%-------------------
-%total         4900$
-
-%costos variables (Bs.)
-%luz                 300
-%agua                150
-%internet           1000  
-%telefono            100
-%suministros ofic.   100
-%agua botellon        40
-%-----------------------
-%total              2890
-
-%total costos: 2890 + 4900 * 6.96 = 36994.0 Bs.
-%por semana = (36994.0 / 22) / 8 = 210.19 bs se paga por hora
-
-%horas que se van a trabajar en el proyecto:
-%29.5 h * 15 sem = 442.5 horas
-
-%442.5 * 210.19 = 93009.075 bs ~ 13363$
-%
-
-
-%Nro pago & Fase & Iteracion & Monto & Detalle & Entregable
-
-%1 & - & - & 
-
-\section{Propuesta economica}
+\section{Propuesta económica}
 
 \subsection{Costos operativos}
-Estos costos se refieren a los servicios basicos y otros suministros, un calculo aproximado en bolivianos por mes ser\'ia:
+Estos costos se refieren a los servicios básicos y otros suministros, un calculo aproximado en bolivianos por mes ser\'ia:\\
 
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|r|}
 \hline
 Luz & 300 \\
 \hline
@@ -186,7 +131,7 @@ Agua & 150 \\
 \hline
 Internet & 1000 \\
 \hline
-Telefono & 100 \\ 
+Teléfono & 100 \\ 
 \hline
 Suministros de oficina & 100 \\
 \hline
@@ -197,9 +142,9 @@ Agua embotellada & 40 \\
 \end{tabular}
 
 \subsection{Costos del personal}
-Estos costos se refieren al salario del personal de la empresa, un calculo aproximado en bolivinos por mes ser\'ia:\\
+Estos costos se refieren al salario del personal de la empresa, un calculo aproximado en bolivianos por mes ser\'ia:\\
 
-\begin{tabular}{|l|l|}
+\begin{tabular}{|l|r|}
 \hline
 Gerente general & 6960 \\
 \hline
@@ -207,7 +152,7 @@ Secretaria & 2784 \\
 \hline
 Limpieza & 1044 \\ 
 \hline
-Administracion & 4176 \\
+Administración & 4176 \\
 \hline
 Contabilidad & 3480 \\
 \hline
@@ -218,40 +163,55 @@ Ingenieros (3) & 14616 \\
 \end{tabular}
 
 \subsection{Costo total}
-Nuestro grupo-empresa realizara el desarrollo del sistema por 29.5 horas a la semana segun nuestro calendario definido en la parte A. Tambien se toma en cuenta que el proyecto esta programado para realizarse durante 15 semanas.
+Nuestro grupo-empresa realizara el desarrollo del sistema por $20.45$ horas a la semana según nuestro calendario definido en la parte A. También se toma en cuenta que el proyecto esta programado para realizarse durante 17 semanas, incluyendo la realización de la propuesta.
 
 Horas totales a trabajarse en el proyecto:
-\begin{displaymath}
-29.5 * 15 = 442.5 Horas
-\end{displaymath} 
+\begin{center}
+$20.45 * 17 = 347.65$ Horas
+\end{center} 
 
 Suma de costos del personal y los costos operativos:
-\begin{displaymath}
-33060 + 1690 = 34750 Bs.
-\end{displaymath}
+\begin{center}
+$33060 + 1690 = 34750$ Bs.
+\end{center}
 
 En el siguiente calculo se detalla el costo por hora:
-\begin{displaymath}
-((34750) / 22 horas laborales ) / 8 horas al dia = 197.44 Bs./Hora
-\end{displaymath}
+\begin{center}
+$((34750) / 22$ horas laborales $) / 8$ horas al día = $197.44$ Bs./Hora
+\end{center}
 
-Costo total del producto:
-\begin{displaymath}
-197.44 Bs./Hora * 442.5 Horas = 87367.2 Bs.
-\end{displaymath}
+Calculo del costo total:
+\begin{center}
+$197.44$ Bs./Hora $ * 347.65$ Horas $= 68641.12$ Bs.
+\end{center}
 
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Costo} & \textbf{Importe (Bs.)}\\
 \hline
-Costo total & 87367.2 \\
+Costo total & 68641,12 \\
 \hline
-Precio de venta incluyendo utilidades (20\%) & 17473.44 \\
+Precio de venta incluyendo utilidades (20\%) & 13728,22 \\
 \hline
-\textbf{Precio final} & \textbf{104840.64} \\
+\textbf{Precio final} & \textbf{82369,34} \\
 \hline
 \end{tabular} \\
 
-El precio final ser\'ia de Cien mil cuatro ochocientos cuarenta 64/100 Bs 
+El precio final ser\'ia de: Ochenta y Dos Mil Trescientos Sesenta y Nueve 34/100 Bs 
 
+\section{Plan de pagos}
+Los pagos se realizar\'an en la finalización de cada hito.\\
+
+\begin{tabular}{|l|l| r @{,} l |}
+\hline
+\textbf{Pago} & \textbf{Evento} & \multicolumn{2}{c|}{\textbf{Monto (Bs.)}}  \\
+\hline
+\hline
+1 & 1"er hito, 9 de septiembre & 8075&3 \\
+\hline
+2 & 2"er hito, 6 de diciembre  & 52489&42 \\
+\hline
+3 & 3"er hito, 20 de diciembre & 8076&73 \\
+\hline
+\end{tabular}
 \end{document}
