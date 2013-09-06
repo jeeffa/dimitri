@@ -1,0 +1,172 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+\begin{document}
+
+\section{Estimacion de esfuerzo}
+
+\subsection{Estimacion usando Puntos de Función (PF)}
+  Es una métrica que permite traducir en un número el tamaño de la funcionalidad que brinda un producto de software desde el punto de vista del usuario, a través de una suma ponderada de las características del producto.
+
+\subsubsection{Calculo de puntos de funcion sin ajustar}
+EI : Procesos en los que se introducen datos y que suponen la actualización de cualquier archivo interno. \\
+EO: Procesos en los que se envía datos al exterior de la aplicación. \\
+EQ: Procesos consistentes en la combinación de una entrada y una salida, en el que la entrada no produce ningún cambio en ningún archivo y la salida no contiene información derivada. \\
+ILF: Grupos de datos relacionados entre sí internos al sistema. \\
+EIF: Grupos de datos que se mantienen externamente.\\
+
+\begin{tabular}{|l|c|c|c|r|}
+\hline
+\textbf{Componente} & \textbf{Bajo} & \textbf{Medio} & \textbf{Alto} & \textbf{Total} \\
+\hline
+EI  & $4 * 3$ & $0 * 4 $ & $0 * 6$ & $12$ \\
+\hline
+EO  & $3 * 4$ & $0 * 5$ & $0 * 7$ & $12$ \\
+\hline
+EQ  & $2 * 3$ & $0 * 5$ & $7 * 6$ & $48$ \\
+\hline
+ILF & $0 * 7$ & $4 * 10$ & $0 * 15$ & $40$ \\
+\hline
+EIF & $0 * 5$ & $0 * 7$ & $0 * 10$ & $0$ \\
+\hline
+\textbf{Total} &&&& 112 \\
+\hline
+\end{tabular}
+
+\subsubsection{Puntos de funcion ajustados}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Nro de factor} & \textbf{Descripcion} & \textbf{Valor} \\
+\hline
+1 & Comunicación de Datos & 1 \\
+\hline
+2 & Proceso Distribuido & 0 \\
+\hline
+3 & Objetivos de Rendimiento & 1 \\
+\hline
+4 & Configuración de Explotación Compartida & 0 \\
+\hline
+5 & Tasa de transacciones & 1 \\
+\hline
+6 & Entrada de Datos en Línea & 3 \\
+\hline
+7 & Eficiencia con el Usuario Final & 2 \\
+\hline
+8 & Actualizaciones en Línea & 3 \\
+\hline
+9 & Lógica de Proceso Interno Compleja & 0 \\
+\hline
+10 & Reusabilidad del Código & 4 \\
+\hline
+11 & Conversión e Instalación contempladas & 1 \\
+\hline
+12 & Facilidad de Operación & 1 \\
+\hline
+13 & Instalaciones Múltiples & 1 \\
+\hline
+14 & Facilidad de Cambios & 2 \\
+\hline
+ACT & & 20 \\
+\hline
+\end{tabular} 
+
+%ACT Ajuste de complejidad tecnica
+
+\subsubsection{Calculo de los puntos de funcion ajustados}
+
+$ACT = 20$
+
+$PFSA = 112$
+
+$PFA = PFSA * [0,65 + [0,01 * ACT]]$
+
+$PFA = 112 * [0,65 + [0,01 * 20]]$
+
+$PFA = 95,2$
+
+\subsubsection{Calculo del esfuerzo}
+
+PFA = 95,2
+
+Horas por Punto de Funcion = 7 \\
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Esfuerzo} & PFA / (1 / Horas por PF) \\
+                  & 95,2 / (1 / 7) \\ 
+                  & = 666,4 [horas/persona] \\
+\hline
+\end{tabular}
+
+\subsubsection{Calculo de la duracion del proyecto}
+
+Numero de personas en el proyecto = 3 personas
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Duración} & Esfuerzo / (numero de personas en el proyecto) \\
+         & (666,4 [horas/persona]) / (3 [personas]) \\
+         & = 222,13 [horas] por miembro \\
+\hline
+\end{tabular}\\
+
+Las horas de trabajo son de 20,45 horas a la semana por persona.\\
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Horas al mes por trabajador} & 20,45 [horas/semana] * 4 [semanas/mes] \\
+                         & = 81,8 [horas/mes] \\
+\hline
+\end{tabular} \\
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Duración en meses} & (Duración en horas) / (Horas al mes) \\
+                           & (222,13 [horas]) / (81,8 [horas/mes]) \\
+                           & = 2,71 [meses] \\
+\hline
+\end{tabular}\\
+
+\subsection{Costo total}
+
+Horas totales a trabajarse en el proyecto calculados
+\begin{center}
+$222,13$ [horas]
+\end{center} 
+
+Suma de costos del personal y los costos operativos:
+\begin{center}
+$33060 + 1690 = 34750$ Bs.
+\end{center}
+
+En el siguiente calculo se detalla el costo por hora:
+\begin{center}
+$((34750) / 22$ horas laborales $) / 8$ horas al día = $197.44$ Bs./Hora
+\end{center}
+
+Calculo del costo total:
+\begin{center}
+$197,44$ Bs./Hora $ * 222,13$ Horas $= 43857,34$ Bs.
+\end{center}
+
+\begin{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Costo} & \textbf{Importe (Bs.)}\\
+    \hline
+    Costo total & 43857,34 \\
+    \hline
+    Precio de venta incluyendo utilidades (30\%) & 13157,20 \\
+    \hline
+    \textbf{Precio final} & \textbf{57014.54} \\
+    \hline
+  \end{tabular} \\
+\end{center} 
+
+El precio final ser\'ia de: Cincuenta y Siete Mil Catorce 54/100 Bs.
+
+
+
+\end{document}

@@ -204,7 +204,7 @@ Es una reunión en la que debemos analizar las cosas que hemos hecho bien y las c
 \subsubsection{Flexible}Todo el desarrollo se contempla como un ciclo de iteraciones continuas de desarrollo, lo que facilita la introducción de modificaciones sobre la marcha, mejorando continuamente el proceso.
 \subsubsection{Colaborativa:}El planteamiento, desde el punto de vista de la organización del equipo, resulta bastante horizontal (en contraposición a una organización jerárquica férrea), otorgando a los miembros del equipo de desarrollo una elevado grado de autonomía y auto-organización de su trabajo.
 
-\section{Planifica\'on }
+\section{Planificaci\'on }
 De acuerdo al marco de trabajo SCRUM se define una planificación dinámica basada en sprint, que son iteraciones de tiempo fijo. En la reunión para la planificación del sprint se decide, junto con el cliente del producto, el conjunto de historias de usuarios (estos pueden ser vistos como requerimientos funcionales) que van a ser desarrolladas durante el Sprint, considerando solo los días laborales definidos en la parte A.
 
 \begin{tabular}{|l|r|}
@@ -224,7 +224,7 @@ Fin de Iteración &	02 de octubre, 2013 \\
 \textbf{Iteración 2} - Total días: 13 & 03 de octubre, 2013 \\
 Reunión con cliente & 10 de octubre, 2013 \\
 Fin de Iteración & 16 de octubre, 2013 \\
-Demo de entrégale & 17 de octubre, 2013 \\
+Demo de entrégable & 17 de octubre, 2013 \\
 \hline
 \hline
 \textbf{Iteración 3} - Total días: 13 & 17 de octubre, 2013 \\
@@ -235,18 +235,142 @@ Fin de Iteración & 30 de octubre, 2013 \\
 \textbf{Iteración 4} - Total días: 13 & 31 de octubre, 2013 \\
 Reunión con cliente & 07 de noviembre, 2013 \\
 Fin de Iteración & 13 de noviembre, 2013 \\
-Demo de entrégale & 14 de noviembre, 2013 \\
+Demo de entrégable & 14 de noviembre, 2013 \\
 \hline
 \hline
 \textbf{Iteración 5} - Total días: 19 &	14 de noviembre, 2013 \\
 Reunión con cliente & 21 de noviembre, 2013 \\
 Reunión con cliente & 28 de noviembre, 2013 \\
 Fin de Iteración & 03 de noviembre, 2013 \\
-Demo de entrégale & 04 de diciembre, 2013 \\
+Demo de entrégable & 04 de diciembre, 2013 \\
 \hline
 \end{tabular}
-\section{Plazo de conclucíon del contrato}
+\section{Plazo de conclusíon del contrato}
 Una vez entregado el software y firmado un documento de conformidad por parte de la empresa TIS, se dar\'a por concluida la relaci\'on contractual con la empresa TIS. Tales acciones en ning\'un caso podr\'an exceder el d\'ia 6 de diciembre del 2013.
+\section{Estimacion de esfuerzo}
+
+\subsection{Estimacion usando Puntos de Función (PF)}
+  Es una métrica que permite traducir en un número el tamaño de la funcionalidad que brinda un producto de software desde el punto de vista del usuario, a través de una suma ponderada de las características del producto.
+
+\subsubsection{Calculo de puntos de funcion sin ajustar}
+EI : Procesos en los que se introducen datos y que suponen la actualización de cualquier archivo interno. \\
+EO: Procesos en los que se envía datos al exterior de la aplicación. \\
+EQ: Procesos consistentes en la combinación de una entrada y una salida, en el que la entrada no produce ningún cambio en ningún archivo y la salida no contiene información derivada. \\
+ILF: Grupos de datos relacionados entre sí internos al sistema. \\
+EIF: Grupos de datos que se mantienen externamente.\\
+
+\begin{tabular}{|l|c|c|c|r|}
+\hline
+\textbf{Componente} & \textbf{Bajo} & \textbf{Medio} & \textbf{Alto} & \textbf{Total} \\
+\hline
+EI  & $4 * 3$ & $0 * 4 $ & $0 * 6$ & $12$ \\
+\hline
+EO  & $3 * 4$ & $0 * 5$ & $0 * 7$ & $12$ \\
+\hline
+EQ  & $2 * 3$ & $0 * 5$ & $7 * 6$ & $48$ \\
+\hline
+ILF & $0 * 7$ & $4 * 10$ & $0 * 15$ & $40$ \\
+\hline
+EIF & $0 * 5$ & $0 * 7$ & $0 * 10$ & $0$ \\
+\hline
+\textbf{Total} &&&& 112 \\
+\hline
+\end{tabular}
+
+\subsubsection{Ajuste de complejidad t\'ecnica}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Nro de factor} & \textbf{Descripcion} & \textbf{Valor} \\
+\hline
+1 & Comunicación de Datos & 1 \\
+\hline
+2 & Proceso Distribuido & 0 \\
+\hline
+3 & Objetivos de Rendimiento & 1 \\
+\hline
+4 & Configuración de Explotación Compartida & 0 \\
+\hline
+5 & Tasa de transacciones & 1 \\
+\hline
+6 & Entrada de Datos en Línea & 3 \\
+\hline
+7 & Eficiencia con el Usuario Final & 2 \\
+\hline
+8 & Actualizaciones en Línea & 3 \\
+\hline
+9 & Lógica de Proceso Interno Compleja & 0 \\
+\hline
+10 & Reusabilidad del Código & 4 \\
+\hline
+11 & Conversión e Instalación contempladas & 1 \\
+\hline
+12 & Facilidad de Operación & 1 \\
+\hline
+13 & Instalaciones Múltiples & 1 \\
+\hline
+14 & Facilidad de Cambios & 2 \\
+\hline
+Ajuste de complejidad t\'ecnica (ACT) & & 20 \\
+\hline
+\end{tabular} 
+
+%ACT Ajuste de complejidad tecnica
+
+\subsubsection{Calculo de los puntos de funcion ajustados}
+
+$ACT = 20$
+
+$PFSA = 112$
+
+$PFA = PFSA * [0,65 + [0,01 * ACT]]$
+
+$PFA = 112 * [0,65 + [0,01 * 20]]$
+
+$PFA = 95,2$
+
+\subsubsection{Calculo del esfuerzo}
+
+PFA = 95,2
+
+Horas por Punto de Funcion = 7 \\
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Esfuerzo} & PFA / (1 / Horas por PF) \\
+                  & 95,2 / (1 / 7) \\ 
+                  & = 666,4 [horas/persona] \\
+\hline
+\end{tabular}
+
+\subsubsection{Calculo de la duracion del proyecto}
+
+Numero de personas en el proyecto = 3 personas
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Duración} & Esfuerzo / (numero de personas en el proyecto) \\
+         & (666,4 [horas/persona]) / (3 [personas]) \\
+         & = 222,13 [horas] por miembro \\
+\hline
+\end{tabular}\\
+
+Las horas de trabajo son de 20,45 horas a la semana por persona.\\
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Horas al mes por trabajador} & 20,45 [horas/semana] * 4 [semanas/mes] \\
+                         & = 81,8 [horas/mes] \\
+\hline
+\end{tabular} \\
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Duración en meses} & (Duración en horas) / (Horas al mes) \\
+                           & (222,13 [horas]) / (81,8 [horas/mes]) \\
+                           & = 2,71 [meses] \\
+\hline
+\end{tabular}\\
 
 \section{Propuesta económica}
 
@@ -298,14 +422,12 @@ Estos costos se refieren al salario del personal de la empresa, un calculo aprox
 \end{center}
 
 \subsection{Costo total}
-Nuestro grupo-empresa realizara el desarrollo del sistema por $20.45$ horas a la semana según nuestro calendario definido en la parte A. También se toma en cuenta que el proyecto esta programado para realizarse durante 17 semanas, incluyendo la realización de la propuesta.
-
-Horas totales a trabajarse en el proyecto:
+Las horas totales a trabajarse en el proyecto son:
 \begin{center}
-$20.45 * 17 = 347.65$ Horas
+$222,13$ [horas]
 \end{center} 
 
-Suma de costos del personal y los costos operativos:
+La suma de costos del personal y los costos operativos:
 \begin{center}
 $33060 + 1690 = 34750$ Bs.
 \end{center}
@@ -317,7 +439,7 @@ $((34750) / 22$ horas laborales $) / 8$ horas al día = $197.44$ Bs./Hora
 
 Calculo del costo total:
 \begin{center}
-$197.44$ Bs./Hora $ * 347.65$ Horas $= 68641.12$ Bs.
+$197,44$ Bs./Hora $ * 222,13$ Horas $= 43857,34$ Bs.
 \end{center}
 
 \begin{center}
@@ -325,16 +447,16 @@ $197.44$ Bs./Hora $ * 347.65$ Horas $= 68641.12$ Bs.
     \hline
     \textbf{Costo} & \textbf{Importe (Bs.)}\\
     \hline
-    Costo total & 68641,12 \\
+    Costo total & 43857,34 \\
     \hline
-    Precio de venta incluyendo utilidades (20\%) & 13728,22 \\
+    Precio de venta incluyendo utilidades (30\%) & 13157,20 \\
     \hline
-    \textbf{Precio final} & \textbf{82369,34} \\
+    \textbf{Precio final} & \textbf{57014.54} \\
     \hline
   \end{tabular} \\
 \end{center} 
 
-El precio final ser\'ia de: Ochenta y Dos Mil Trescientos Sesenta y Nueve 34/100 Bs 
+El precio final ser\'ia de: Cincuenta y Siete Mil Catorce 54/100 Bs.
 
 \section{Plan de pagos}
 Los pagos se realizar\'an en la finalización de cada hito.\\
@@ -345,11 +467,11 @@ Los pagos se realizar\'an en la finalización de cada hito.\\
     \textbf{Pago} & \textbf{Evento} & \textbf{Monto (\%)} \\
     \hline
     \hline
-    1 & Demo de entrégale 17 de octubre, 2013 & 25.0 \%  \\
+    1 & Demo de entrégable 17 de octubre, 2013 & 25.0 \%  \\
     \hline
-    2 & Demo de entrégale 14 de noviembre, 2013  & 45.0 \%  \\
+    2 & Demo de entrégable 14 de noviembre, 2013  & 45.0 \%  \\
     \hline
-    3 & Demo de entrégale 04 de diciembre, 2013& 30.0 \%  \\
+    3 & Demo de entrégable 04 de diciembre, 2013& 30.0 \%  \\
     \hline
   \end{tabular}
 \end{center}
