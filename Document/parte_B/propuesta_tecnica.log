@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  6 SEP 2013 12:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  6 SEP 2013 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -160,9 +160,6 @@ Package babel Info: Making . an active character on input line 588.
 Package babel Info: Making < an active character on input line 633.
 Package babel Info: Making > an active character on input line 633.
 ))
-(/usr/share/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
-)
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip54
@@ -221,11 +218,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-\@indexfile=\write3
-\openout3 = `propuesta_tecnica.idx'.
-
-
-Writing index file propuesta_tecnica.idx
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
@@ -248,18 +240,18 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `propuesta_tecnica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 \AtBeginShipoutBox=\box28
  (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -352,244 +344,237 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-No file propuesta_tecnica.ind.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 55.
-(/usr/share/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-<membrete_bw.pdf, id=1, 614.295pt x 794.97pt>
-File: membrete_bw.pdf Graphic file (type pdf)
- <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 75.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./membrete_bw.pdf>]
+LaTeX Warning: No \author given.
+
+(./propuesta_tecnica.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ <membrete_bw.pdf, id=1, 614.295pt x 794.97pt>
 File: membrete_bw.pdf Graphic file (type pdf)
 
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 88.
+Package pdftex.def Info: membrete_bw.pdf used on input line 38.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [2]
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./membrete_bw.pdf>])
+\tf@toc=\write3
+\openout3 = `propuesta_tecnica.toc'.
+
 File: membrete_bw.pdf Graphic file (type pdf)
  <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 106.
+Package pdftex.def Info: membrete_bw.pdf used on input line 23.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [2]
+LaTeX Font Info:    Try loading font information for U+lasy on input line 48.
+
+(/usr/share/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+File: membrete_bw.pdf Graphic file (type pdf)
+ <use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 68.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [3]
-Overfull \hbox (16.58792pt too wide) in paragraph at lines 122--123
+File: membrete_bw.pdf Graphic file (type pdf)
+
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 81.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [4]
+File: membrete_bw.pdf Graphic file (type pdf)
+ <use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 99.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [5]
+Overfull \hbox (16.58792pt too wide) in paragraph at lines 115--116
 []\OT1/cmr/m/n/12 Permite crear una com-pe-ti-ci^^Son en-tre olim-pis-tas, se p
 odr^^Sa se-
  []
 
 File: membrete_bw.pdf Graphic file (type pdf)
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 139.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [4]
-<includes/agil.jpg, id=41, 442.65375pt x 284.56313pt>
-File: includes/agil.jpg Graphic file (type jpg)
- <use includes/agil.jpg>
-Package pdftex.def Info: includes/agil.jpg used on input line 150.
-(pdftex.def)             Requested size: 309.8555pt x 199.19283pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--163
-
- []
-
-File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 163.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [5 <./includes/agil.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 165--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 172.
+Package pdftex.def Info: membrete_bw.pdf used on input line 132.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+<includes/agil.jpg, id=48, 442.65375pt x 284.56313pt>
+File: includes/agil.jpg Graphic file (type jpg)
+ <use includes/agil.jpg>
+Package pdftex.def Info: includes/agil.jpg used on input line 143.
+(pdftex.def)             Requested size: 309.8555pt x 199.19283pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--187
+Underfull \hbox (badness 10000) in paragraph at lines 136--148
 
  []
 
 File: membrete_bw.pdf Graphic file (type pdf)
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 187.
+Package pdftex.def Info: membrete_bw.pdf used on input line 153.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [7]
+ [7 <./includes/agil.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
+
 File: membrete_bw.pdf Graphic file (type pdf)
- <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 200.
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 169.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [8]
-File: membrete_bw.pdf Graphic file (type pdf)
- <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 212.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
-[9]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--181
+
+ []
+
+File: membrete_bw.pdf Graphic file (type pdf)
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 181.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [9]
 File: membrete_bw.pdf Graphic file (type pdf)
  <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 254.
+Package pdftex.def Info: membrete_bw.pdf used on input line 196.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
 File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 280.
+ <use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 207.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
- []
-
+[11]
 File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 341.
+ <use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 250.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+File: membrete_bw.pdf Graphic file (type pdf)
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 302.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 357--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--374
+Underfull \hbox (badness 10000) in paragraph at lines 357--363
+
+ []
+
+File: membrete_bw.pdf Graphic file (type pdf)
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 363.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
 []\OT1/cmr/bx/n/12 Nro.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--374
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
 \OT1/cmr/bx/n/12 Ries-
  []
 
 
-Overfull \hbox (4.28339pt too wide) in paragraph at lines 374--374
+Overfull \hbox (4.28339pt too wide) in paragraph at lines 368--368
 []\OT1/cmr/bx/n/12 Prob.
  []
 
 
-Overfull \hbox (5.66116pt too wide) in paragraph at lines 374--374
+Overfull \hbox (5.66116pt too wide) in paragraph at lines 368--368
 []\OT1/cmr/bx/n/12 Impacto| 
  []
 
 
-Overfull \hbox (4.61415pt too wide) in paragraph at lines 374--375
+Overfull \hbox (4.61415pt too wide) in paragraph at lines 368--369
 []\OT1/cmr/bx/n/12 Consecuencias| 
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 376--377
+Underfull \hbox (badness 2781) in paragraph at lines 370--371
 []\OT1/cmr/m/n/12 Posibles re-tra-
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 378--379
+Underfull \hbox (badness 4981) in paragraph at lines 372--373
 \OT1/cmr/m/n/12 ni-fi-ca-ci^^Son pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 \OT1/cmr/m/n/12 desa-rro-llo del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 \OT1/cmr/m/n/12 desa-rro-llo del
  []
 
-File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 385.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
 []\OT1/cmr/bx/n/12 Nro.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
 \OT1/cmr/bx/n/12 Ries-
  []
 
 File: membrete_bw.pdf Graphic file (type pdf)
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 403.
+Package pdftex.def Info: membrete_bw.pdf used on input line 397.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [14] (./propuesta_tecnica.aux
+ [15] (./propuesta_tecnica.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 5180 strings out of 493315
- 73725 string characters out of 6143704
- 161027 words of memory out of 5000000
- 8553 multiletter control sequences out of 15000+600000
- 9589 words of font info for 35 fonts, out of 8000000 for 9000
+ 5181 strings out of 493315
+ 73732 string characters out of 6143704
+ 159983 words of memory out of 5000000
+ 8556 multiletter control sequences out of 15000+600000
+ 10954 words of font info for 40 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,15n,42p,662b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on propuesta_tecnica.pdf (14 pages, 141773 bytes).
+ 38i,15n,42p,662b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on propuesta_tecnica.pdf (15 pages, 152392 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

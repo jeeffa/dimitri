@@ -4,25 +4,32 @@
 %\usepackage[letterpaper,headheight=16pt,scale={0.7,0.8},hoffset=0.5cm]{geometry}
 \usepackage[letterpaper]{geometry}
 \usepackage[spanish]{babel}
+\usepackage{makeidx}
 \usepackage{amsmath}
 \numberwithin{equation}{section}
 \numberwithin{figure}{section}
 \numberwithin{table}{section}
+\makeindex
 \usepackage[hang,bf]{caption}
-\title{Propuesta T\'ecnica}
+\pagestyle{empty}
+
 %\usepackage[pdftex]{graphicx}
 %\pdfcompresslevel=9
+
 \newcommand{\imgdir}{includes}
 \graphicspath{{\imgdir/}}
+
 \topmargin 0in
+\makeindex
 \ULCornerWallPaper{1}{membrete_bw.pdf}
-\pagestyle{empty}
+
 \begin{document}
-\maketitle
-\tableofcontents
-\newpage
+\index{|}
+\printindex
 \section{Propuesta de servicios}
+
 \subsection{Propósito}
+
 La presente propuesta técnica tiene como propósito exponer nuestra alternativa de solución al problema de la empresa de TIS para una juez virtual para la Olimpiada Internacional de Informática. Además el documento servirá de guía para el proceso de desarrollo del producto de software y formará parte indivisible del contrato estipulado entre la empresa TIS y el proponente, esperando que cumpla y satisfaga con las exigencias emitidas por parte de la empresa licitante.
 
 \subsection{Objetivo}
@@ -39,7 +46,7 @@ Desarrollar un juez virtual, que funcione a nivel departamental, que permita a o
     \item Desarrollo de componentes del gestión de competición.% lleva a cabo una competicion, controla el tiempo, registra puntajes de los equipos
     \item Desarrollo de componentes del gestión de problemas 
     %\item Integracion de todos los componentes
-    \item Realización de la gestión de calidad del sistema integrado
+    \item Realizacion de la gestión de calidad del sistema integrado
 % Practicas - Este permite a un equipo o olimpista a practicar localmente, sin necesidad de estar en una competicion, es parecido al modulo de competicion. (pueden heredar funcionalidades de una clase padre)
 
 \end{itemize}
@@ -110,7 +117,7 @@ Las versiones a ser utilizadas de Apache, MySQL y PHP serán definidas de acuerdo
     \item[Gestión de usuarios]
     La gestión de usuarios consta de la creación, modificación y depuración de usuarios, los tipos de usuarios se especifican en  \ref{users}. Cada tipo de usuario tendrá establecido sus privilegios con respecto al Sistema.
     \item[Modulo evaluador]
-    Consta de un sub-sistema que recibe una solución a un problema y ejecuta los casos de prueba correspondientes al problema, luego devuelve un puntaje de acuerdo a los resultados de la ejecución de los casos de prueba. 
+    Consta de un sub-sistema que recibe una solución a un problema y ejecuta los casos de prueba correspondientes al problema, luego devuelve un puntaje de acuerdo a los resultados de la ejecucion de los casos de prueba. 
     \item[Gestión de competición] 
     Permite crear una competición entre olimpistas, se podrá seleccionar el modo de la competición, es decir si la competición va ser verdadera o solo sera una practica. Una vez creada la competición se la podrá dar inicio y también se la podrá finalizar. También se contempla la creación de reportes relacionados a la competición, como ser un ranking de una competición determinada.
     \item[Gestión problemas]
@@ -138,36 +145,35 @@ llama a veces "desarrollo incremental"). Para esa parte del sistema, se realiza 
 diseño, programación y pruebas. Se acaba la iteración con un ejecutable que incluye todas las partes del 
 sistema construidas hasta el momento. Los aspectos del sistema con más riesgo (por ejemplo, la arquitectura) 
 se construyen en las primeras iteraciones. El esquema de un modelo iterativo se muestra gráficamente en la 
-siguiente figura.\\
+siguiente figura.
 \begin{figure}[ht]
 \includegraphics[scale=0.7]{agil.jpg}\\
 \caption{}
 \label{graf}
-\end{figure}\\
+\end{figure}
 En este sentido podemos considerar SCRUM como el paradigma de metodología de desarrollo ágil, definiendo la forma de abordar un proceso de desarrollo de software de forma ágil y liviana, a través de la descripción de un conjunto de roles, componentes y organización de la actividad diaria.\\
-\subsection{Roles en la metodología SCRUM}
+\subsection{Roles en la metodólogía SCRUM}
 
 \subsubsection{Rol product owner}
-Persona que trabaja junto con el \textbf{Cliente} con conocimientos de negocio e inform\'atica sus responsabilidades son :
-\begin{itemize}
-\item Representante de todas las personas interesadas en los resultados del proyecto.
-\item Es quien coordina las actividades administrativas o funcionales que deben realizar los usuarios en implementación a las actividades y requerimientos del equipo de desarrollo.
-\item 	Es quien se encarga del financiamiento del proyecto y de que los requerimientos o necesidades de los usuarios sean satisfechos en tiempo y alcance.\\\\
+Persona que trabaja junto con el \textbf{Cliente} con conocimientos de negocio e inform\'atica sus responsabilidades son :\\
+		*Representante de todas las personas interesadas en los resultados del proyecto.\\
+		*Es quien coordina las actividades administrativas o funcionales que deben realizar los usuarios en complementación a las actividades y requerimientos del equipo de desarrollo.\\ 		
+		*Es quien se encarga del financiamiento del proyecto y de que los requerimientos o necesidades de los usuarios sean satisfechos en tiempo y alcance.\\\\
 Sobre el Product Owner recae la responsabilidad de definir el conjunto de requerimiento.
 
-\end{itemize}
 \subsubsection{Cliente}
-Ser el \textbf{representante de todas las personas interesadas} en los resultados del proyecto (internas o externas a la organización, promotores del proyecto y usuarios finales [idealmente  también debería ser un usuario clave] o consumidores finales del producto).\\
-Definir los objetivos del producto o proyecto.\\
-\textbf{Colaborar con el equipo para planificar, revisar y dar detalle a los objetivos de cada iteración}
+Ser el\textbf{representante de todas las personas interesadas} en los resultados del proyecto (internas o externas a la organización, promotores del proyecto y usuarios finales [idealmente  también debería ser un usuario clave] o consumidores finales del producto).\\
+Definir los\textbf{ objetivos del producto o proyecto}.\\
+\textbf{Colaborar con el equipo para planificar, revisar y dar detalle a los objetivos de cada iteración}\\
 \subsubsection{Scrum Master}
-\textbf{Responsable de que el equipo desempeñe sus actividades} de una manera eficiente y organizada, también elimina obstáculos que impiden que el equipo alcance el objetivo del sprint.
+\textbf{Responsable de que el equipo desempeñe sus actividades} de una manera eficiente y organizada, también elimina obstáculos que impiden que el equipo alcance el objetivo del sprint.\\
 \subsubsection{Scrum Team}
-Es un equipo  formado de 7(+/-)3 integrantes que se encargan de revisar los requerimientos, la tecnología disponible y evalúan los conocimientos para determinar de manera colectiva cómo incrementar la funcionalidad del software, son responsables de elegir las historias de usuarios para una determinada iteración y se caracteriza  por ser auto gestionado y auto organizado.
+Es un equipo  formado de 7(+/-)3 integrantes que se encargan de revisar los requerimientos, la tecnología disponible y evalúan los conocimientos para determinar de manera colectiva cómo incrementar la funcionalidad del software, son responsables de elegir las historias de usuarios para una determinada iteración y se caracteriza  por ser auto gestionado y auto organizado.\\\\
+
 \textbf{El cliente y el equipo} tienen que \guillemotleft acordar la definición de completado\guillemotright de los objetivos / requisitos en el proyecto:
 \begin{itemize}
-\item Debe asegurar que el incremento de producto es potencialmente entrégale al cliente al finalizar cada iteración, que no hay tareas pendientes que puedan impedir utilizar los resultados del proyecto lo antes posible. De este modo, el cliente podrá tomar decisiones correctas cuando al final de cada iteración el equipo le haga una demostración de los requisitos completados: cambiar las prioridades en función de la velocidad de desarrollo, solicitar una entrega del producto desarrollado hasta ese momento, etc.
-\item Debe incluir lo necesario para considerar de manera clara que el cliente obtendrá lo que necesita según sus criterios de entrégales y de calidad (producto construido, probado, documentado, refactorizado para conseguir calidad interna/mantenibilidad, etc.).
+\item Debe asegurar que el incremento de producto es potencialmente entregable al cliente al finalizar cada iteración, que no hay tareas pendientes que puedan impedir utilizar los resultados del proyecto lo antes posible. De este modo, el cliente podrá tomar decisiones correctas cuando al final de cada iteración el equipo le haga una demostración de los requisitos completados: cambiar las prioridades en función de la velocidad de desarrollo, solicitar una entrega del producto desarrollado hasta ese momento, etc.
+\item Debe incluir lo necesario para considerar de manera clara que el cliente obtendrá lo que necesita según sus criterios de entregables y de calidad (producto construido, probado, documentado, refactorizado para conseguir calidad interna/mantenibilidad, etc.).
 \end{itemize}
         Además de esta definición de completado, a cada objetivo hay que asociarle sus condiciones de satisfacción, preferiblemente en forma de casos de prueba de aceptación, en el momento de crear la lista de requisitos priorizada (Product Backlog).\\
         Notar que la definición de completado también sirve como base para identificar las tareas necesarias para conseguir cada objetivo/requisito, en la reunión de planificación de la iteración (Sprint planning). Para cada objetivo se crearán más tareas que la definición de completado (o menos) y con más significado. Por ejemplo, respecto a que el objetivo tiene que estar construido, pueden aparecer varias tareas, del estilo construir el componente X, modificar la pantalla Y , modificar la BBDD, preparar el script de carga, etc.\\
@@ -181,7 +187,7 @@ Es la base de desarrollo de Scrum, su duración se encuentra  entre 15 a 30 días,
 \subsubsection{La  duración del sprint}
 Los sprint cortos permite al equipo ser ágil  es decir cambiar de dirección frecuentemente, pero los sprint largos tampoco están mal el equipo consigue más tiempo para realizar sus actividades y recuperarse de los problemas que surjan en el sprint y así cumplir la meta.
 \subsubsection{La  meta del sprint}
-La meta del sprint debería responder a la pregunta fundamental ¿Por qué realizamos este sprint? Las respuestas pueden ser \guillemotleft \textbf{Cumplir con las expectativas del cliente.}\guillemotright \
+La meta del sprint debería responder a la pregunta fundamental ¿Por qué realizamos este sprint? Las respuestas pueden ser \guillemotleft \textbf{Cumplir con las espectativas del cliente.}\guillemotright \
 \subsubsection{Product Backlog}
 Contiene los \textbf{objetivos/requisitos }de alto nivel del producto o proyecto.\\ \textbf{Product Backlog} se suelen expresar en forma de historias de usuario. Para cada \textbf{objetivo/requisito} se indica el valor que aporta al cliente y el coste estimado de completarlo. 
 \subsubsection{Sprint Backlog}
@@ -190,7 +196,7 @@ Especifica la serie de tareas que se van a desarrollar, que descompone las funci
 \subsubsection{Planificación del Sprint}
 Para la planificación se deberán tomar como base las prioridades y necesidades del cliente, se determina cuáles y cómo van a ser las funcionalidades que incorporara el producto tras el siguiente sprint, consta de dos partes:\\
 \textbf{En la primera} parte se decide qué elementos de la pila de producto se van a desarrollar.
-\textbf{En la segunda} parte se desglosa estos para determinar las tareas necesarias y estimar el esfuerzo para cada una, también procedemos a  asignarlas a cada uno de los miembros del equipo.
+\textbf{En la segunda}parte se desglosa estos para determinar las tareas necesarias y estimar el esfuerzo para cada una, también procedemos a  asignarlas a cada uno de los miembros del equipo.
 \subsubsection{Seguimiento del Sprint o reunión diaria}
 Es una reunión breve no más de 15 minutos en la que cada miembro del equipo dice las tareas en las que está trabajando, si se ha encontrado o prevé encontrarse con algún impedimento o actualizar sobre la pila de sprint las ya terminadas.
 \subsubsection{Revisión del Sprint}
@@ -200,8 +206,8 @@ Es una reunión en la que debemos analizar las cosas que hemos hecho bien y las c
 
 \subsection{Ventajas de scrum}
 \subsubsection{Simple} Se centra especialmente en facilitar el desarrollo rápido, por lo que su complejidad (por ejemplo desde el punto de vista de la documentación a generar o de la organización de equipos) se ha tratado de reducir al máximo.
-\subsubsection{Ágil }La división del trabajo en pequeñas unidades funcionales (sprints) permite mantener una política de entregas frecuentes de software que ofrecen una visión clara del estado del proceso y permite la introducción de modificaciones.
-\subsubsection{Flexible}Todo el desarrollo se contempla como un ciclo de iteraciones continuas de desarrollo, lo que facilita la introducción de modificaciones sobre la marcha, mejorando continuamente el proceso.
+\subsubsection{\'Agil }La división del trabajo en pequeñas unidades funcionales (sprints) permite mantener una política de entregas frecuentes de software que ofrecen una visión clara del estado del proceso y permite la introducción de modificaciones.
+\subsubsection{Flexible}Todo el desarrollo se contempla como un ciclo de iteraciones continuas de desarrollo, lo que facilita la introducción de modificaciones ?sobre la marcha?, mejorando continuamente el proceso.
 \subsubsection{Colaborativa:}El planteamiento, desde el punto de vista de la organización del equipo, resulta bastante horizontal (en contraposición a una organización jerárquica férrea), otorgando a los miembros del equipo de desarrollo una elevado grado de autonomía y auto-organización de su trabajo.
 
 \section{Planifica\'on }
@@ -216,36 +222,36 @@ Inicio de Iteración 0 & 12 de septiembre, 2013 \\
 Fin de Iteración 0	&	18 de septiembre, 2013 \\
 \hline
 \hline
-\textbf{Iteración 1} - Total días: 13 & 19 de septiembre, 2013 \\
-Reunión con cliente	&	26 de septiembre, 2013 \\
+\textbf{Iteración 1} - Total dias: 13 & 19 de septiembre, 2013 \\
+Reunion con cliente	&	26 de septiembre, 2013 \\
 Fin de Iteración &	02 de octubre, 2013 \\
 \hline
 \hline
-\textbf{Iteración 2} - Total días: 13 & 03 de octubre, 2013 \\
-Reunión con cliente & 10 de octubre, 2013 \\
+\textbf{Iteración 2} - Total dias: 13 & 03 de octubre, 2013 \\
+Reunion con cliente & 10 de octubre, 2013 \\
 Fin de Iteración & 16 de octubre, 2013 \\
-Demo de entrégale & 17 de octubre, 2013 \\
+Demo de entregable & 17 de octubre, 2013 \\
 \hline
 \hline
-\textbf{Iteración 3} - Total días: 13 & 17 de octubre, 2013 \\
-Reunión con cliente & 24 de octubre, 2013 \\
+\textbf{Iteración 3} - Total dias: 13 & 17 de octubre, 2013 \\
+Reunion con cliente & 24 de octubre, 2013 \\
 Fin de Iteración & 30 de octubre, 2013 \\
 \hline
 \hline
-\textbf{Iteración 4} - Total días: 13 & 31 de octubre, 2013 \\
-Reunión con cliente & 07 de noviembre, 2013 \\
+\textbf{Iteración 4} - Total dias: 13 & 31 de octubre, 2013 \\
+Reunion con cliente & 07 de noviembre, 2013 \\
 Fin de Iteración & 13 de noviembre, 2013 \\
-Demo de entrégale & 14 de noviembre, 2013 \\
+Demo de entregable & 14 de noviembre, 2013 \\
 \hline
 \hline
-\textbf{Iteración 5} - Total días: 19 &	14 de noviembre, 2013 \\
-Reunión con cliente & 21 de noviembre, 2013 \\
-Reunión con cliente & 28 de noviembre, 2013 \\
+\textbf{Iteración 5} - Total dias: 19 &	14 de noviembre, 2013 \\
+Reunion con cliente & 21 de noviembre, 2013 \\
+Reunion con cliente & 28 de noviembre, 2013 \\
 Fin de Iteración & 03 de noviembre, 2013 \\
-Demo de entrégale & 04 de diciembre, 2013 \\
+Demo de entregable & 04 de diciembre, 2013 \\
 \hline
 \end{tabular}
-\section{Plazo de conclucíon del contrato}
+\section{Plazo de conclusi\'on del contrato}
 Una vez entregado el software y firmado un documento de conformidad por parte de la empresa TIS, se dar\'a por concluida la relaci\'on contractual con la empresa TIS. Tales acciones en ning\'un caso podr\'an exceder el d\'ia 6 de diciembre del 2013.
 
 \section{Propuesta económica}
@@ -340,16 +346,16 @@ El precio final ser\'ia de: Ochenta y Dos Mil Trescientos Sesenta y Nueve 34/100
 Los pagos se realizar\'an en la finalización de cada hito.\\
 
 \begin{center}
-  \begin{tabular}{|l|l|l|}
+  \begin{tabular}{|l|l| r @{,} l |}
     \hline
-    \textbf{Pago} & \textbf{Evento} & \textbf{Monto (\%)} \\
+    \textbf{Pago} & \textbf{Evento} & \multicolumn{2}{c|}{\textbf{Monto (Bs.)}}  \\
     \hline
     \hline
-    1 & Demo de entrégale 17 de octubre, 2013 & 25.0 \%  \\
+    1 & 1"er hito, 9 de septiembre & 8075&3 \\
     \hline
-    2 & Demo de entrégale 14 de noviembre, 2013  & 45.0 \%  \\
+    2 & 2"er hito, 6 de diciembre  & 52489&42 \\
     \hline
-    3 & Demo de entrégale 04 de diciembre, 2013& 30.0 \%  \\
+    3 & 3"er hito, 20 de diciembre & 8076&73 \\
     \hline
   \end{tabular}
 \end{center}

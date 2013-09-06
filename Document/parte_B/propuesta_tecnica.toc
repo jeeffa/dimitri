@@ -1,0 +1,49 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Propuesta de servicios}{3}
+\contentsline {subsection}{\numberline {1.1}Prop\'osito}{3}
+\contentsline {subsection}{\numberline {1.2}Objetivo}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}Objetivo general}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}Objetivos espec\IeC {\'\i }ficos}{3}
+\contentsline {subsubsection}{\numberline {1.2.3}Tecnolog\IeC {\'\i }a a utilizar}{3}
+\contentsline {paragraph}{El Servidor web Apache}{4}
+\contentsline {paragraph}{Gestor de base de datos MySQL}{4}
+\contentsline {paragraph}{Lenguaje de programaci\'on PHP}{4}
+\contentsline {paragraph}{Framework Symfony}{4}
+\contentsline {paragraph}{Biblioteca de JavaScript jQuery}{5}
+\contentsline {paragraph}{Sistema de control de versiones Git}{5}
+\contentsline {paragraph}{Netbeans}{5}
+\contentsline {paragraph}{Composici\'on de documentaci\'on \textlatin {\LaTeX }}{5}
+\contentsline {paragraph}{Vim}{5}
+\contentsline {paragraph}{MySQL Workbench}{6}
+\contentsline {subsection}{\numberline {1.3}Tipos de usuarios}{6}
+\contentsline {subsection}{\numberline {1.4}Funcionalidades globales}{6}
+\contentsline {section}{\numberline {2}Metodolog\'ia de desarrollo}{6}
+\contentsline {subsection}{\numberline {2.1}Roles en la metodolog\IeC {\'\i }a SCRUM}{8}
+\contentsline {subsubsection}{\numberline {2.1.1}Rol product owner}{8}
+\contentsline {subsubsection}{\numberline {2.1.2}Cliente}{8}
+\contentsline {subsubsection}{\numberline {2.1.3}Scrum Master}{8}
+\contentsline {subsubsection}{\numberline {2.1.4}Scrum Team}{8}
+\contentsline {subsection}{\numberline {2.2}Componentes de scrum}{9}
+\contentsline {subsubsection}{\numberline {2.2.1}Sprint o Iterac\'on}{9}
+\contentsline {subsubsection}{\numberline {2.2.2}La duraci\'on del sprint}{10}
+\contentsline {subsubsection}{\numberline {2.2.3}La meta del sprint}{10}
+\contentsline {subsubsection}{\numberline {2.2.4}Product Backlog}{10}
+\contentsline {subsubsection}{\numberline {2.2.5}Sprint Backlog}{10}
+\contentsline {subsection}{\numberline {2.3}Reuniones scrum}{10}
+\contentsline {subsubsection}{\numberline {2.3.1}Planificaci\'on del Sprint}{10}
+\contentsline {subsubsection}{\numberline {2.3.2}Seguimiento del Sprint o reuni\'on diaria}{11}
+\contentsline {subsubsection}{\numberline {2.3.3}Revisi\'on del Sprint}{11}
+\contentsline {subsubsection}{\numberline {2.3.4}Retrospectiva}{11}
+\contentsline {subsection}{\numberline {2.4}Ventajas de scrum}{11}
+\contentsline {subsubsection}{\numberline {2.4.1}Simple}{11}
+\contentsline {subsubsection}{\numberline {2.4.2}\'Agil }{11}
+\contentsline {subsubsection}{\numberline {2.4.3}Flexible}{11}
+\contentsline {subsubsection}{\numberline {2.4.4}Colaborativa:}{11}
+\contentsline {section}{\numberline {3}Planifica\'on }{12}
+\contentsline {section}{\numberline {4}Plazo de concluc\IeC {\'\i }on del contrato}{13}
+\contentsline {section}{\numberline {5}Propuesta econ\'omica}{13}
+\contentsline {subsection}{\numberline {5.1}Costos operativos}{13}
+\contentsline {subsection}{\numberline {5.2}Costos del personal}{13}
+\contentsline {subsection}{\numberline {5.3}Costo total}{14}
+\contentsline {section}{\numberline {6}Plan de pagos}{14}
+\contentsline {section}{\numberline {7}Gesti\'on de riesgos}{15}
