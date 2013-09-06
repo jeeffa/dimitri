@@ -24,7 +24,7 @@
 \contentsline {subsubsection}{\numberline {2.1.3}Scrum Master}{8}
 \contentsline {subsubsection}{\numberline {2.1.4}Scrum Team}{8}
 \contentsline {subsection}{\numberline {2.2}Componentes de scrum}{9}
-\contentsline {subsubsection}{\numberline {2.2.1}Sprint o Iterac\'on}{9}
+\contentsline {subsubsection}{\numberline {2.2.1}Sprint o Iteraci\'on}{9}
 \contentsline {subsubsection}{\numberline {2.2.2}La duraci\'on del sprint}{10}
 \contentsline {subsubsection}{\numberline {2.2.3}La meta del sprint}{10}
 \contentsline {subsubsection}{\numberline {2.2.4}Product Backlog}{10}
