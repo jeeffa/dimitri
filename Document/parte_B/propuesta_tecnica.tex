@@ -157,14 +157,18 @@ Sobre el Product Owner recae la responsabilidad de definir el conjunto de requer
 
 \end{itemize}
 \subsubsection{Cliente}
-Ser el \textbf{representante de todas las personas interesadas} en los resultados del proyecto (internas o externas a la organización, promotores del proyecto y usuarios finales [idealmente  también debería ser un usuario clave] o consumidores finales del producto).\\
-Definir los objetivos del producto o proyecto.\\
-\textbf{Colaborar con el equipo para planificar, revisar y dar detalle a los objetivos de cada iteración}
+\begin{itemize}
+\item Ser el \textbf{representante} de todas las personas interesadas en los resultados del proyecto (internas o externas a la organización, promotores del proyecto y usuarios finales [idealmente  también debería ser un usuario clave] o consumidores finales del producto).
+\item Definir los objetivos del producto o proyecto.
+\item Colaborar con el equipo para planificar, revisar y dar detalle a los objetivos de cada iteración.
+\end{itemize} 
+
 \subsubsection{Scrum Master}
-\textbf{Responsable de que el equipo desempeñe sus actividades} de una manera eficiente y organizada, también elimina obstáculos que impiden que el equipo alcance el objetivo del sprint.
+Responsable de que el equipo desempeñe sus actividades de una manera eficiente y organizada, también elimina obstáculos que impiden que el equipo alcance el objetivo del sprint.
 \subsubsection{Scrum Team}
-Es un equipo  formado de 7(+/-)3 integrantes que se encargan de revisar los requerimientos, la tecnología disponible y evalúan los conocimientos para determinar de manera colectiva cómo incrementar la funcionalidad del software, son responsables de elegir las historias de usuarios para una determinada iteración y se caracteriza  por ser auto gestionado y auto organizado.
-\textbf{El cliente y el equipo} tienen que \guillemotleft acordar la definición de completado\guillemotright de los objetivos / requisitos en el proyecto:
+Es un equipo  formado de 7 (+/-) 3 integrantes que se encargan de revisar los requerimientos, la tecnología disponible y evalúan los conocimientos para determinar de manera colectiva cómo incrementar la funcionalidad del software, son responsables de elegir las historias de usuarios para una determinada iteración y se caracteriza  por ser auto gestionado y auto organizado.
+
+\textbf{El cliente y el equipo} tienen que \emph{acordar la definición de completado} de los objetivos / requisitos en el proyecto:
 \begin{itemize}
 \item Debe asegurar que el incremento de producto es potencialmente entrégale al cliente al finalizar cada iteración, que no hay tareas pendientes que puedan impedir utilizar los resultados del proyecto lo antes posible. De este modo, el cliente podrá tomar decisiones correctas cuando al final de cada iteración el equipo le haga una demostración de los requisitos completados: cambiar las prioridades en función de la velocidad de desarrollo, solicitar una entrega del producto desarrollado hasta ese momento, etc.
 \item Debe incluir lo necesario para considerar de manera clara que el cliente obtendrá lo que necesita según sus criterios de entrégales y de calidad (producto construido, probado, documentado, refactorizado para conseguir calidad interna/mantenibilidad, etc.).
@@ -172,12 +176,14 @@ Es un equipo  formado de 7(+/-)3 integrantes que se encargan de revisar los requ
         Además de esta definición de completado, a cada objetivo hay que asociarle sus condiciones de satisfacción, preferiblemente en forma de casos de prueba de aceptación, en el momento de crear la lista de requisitos priorizada (Product Backlog).\\
         Notar que la definición de completado también sirve como base para identificar las tareas necesarias para conseguir cada objetivo/requisito, en la reunión de planificación de la iteración (Sprint planning). Para cada objetivo se crearán más tareas que la definición de completado (o menos) y con más significado. Por ejemplo, respecto a que el objetivo tiene que estar construido, pueden aparecer varias tareas, del estilo construir el componente X, modificar la pantalla Y , modificar la BBDD, preparar el script de carga, etc.\\
 
-\subsection{Componentes de scrum}
+\subsection{Componentes de SCRUM}
 Término general para cualquier tipo de información creada, producida, cambiada o utilizada por el equipo Scrum.
 \subsubsection{Sprint o Iteraci\'on}
 Es la base de desarrollo de Scrum, su duración se encuentra  entre 15 a 30 días, solo el Scrum Master puede abortar el sprint si lo considera no viable por alguna de estas razones:\\\\
--La tecnología establecida no funciona\\
--El equipo ha tenido interferencias
+\begin{itemize}
+\item La tecnología establecida no funciona
+\item El equipo ha tenido interferencias
+\end{itemize}
 \subsubsection{La  duración del sprint}
 Los sprint cortos permite al equipo ser ágil  es decir cambiar de dirección frecuentemente, pero los sprint largos tampoco están mal el equipo consigue más tiempo para realizar sus actividades y recuperarse de los problemas que surjan en el sprint y así cumplir la meta.
 \subsubsection{La  meta del sprint}
@@ -247,12 +253,12 @@ Demo de entrégable & 04 de diciembre, 2013 \\
 \end{tabular}
 \section{Plazo de conclusión del contrato}
 Una vez entregado el software y firmado un documento de conformidad por parte de la empresa TIS, se dar\'a por concluida la relaci\'on contractual con la empresa TIS. Tales acciones en ning\'un caso podr\'an exceder el d\'ia 6 de diciembre del 2013.
-\section{Estimacion de esfuerzo}
+\section{Estimaci\'on de esfuerzo}
 
-\subsection{Estimacion usando Puntos de Función (PF)}
+\subsection{Estimaci\'on usando Puntos de Función (PF)}
   Es una métrica que permite traducir en un número el tamaño de la funcionalidad que brinda un producto de software desde el punto de vista del usuario, a través de una suma ponderada de las características del producto.
 
-\subsubsection{Calculo de puntos de función sin ajustar}
+\subsubsection{C\'alculo de puntos de función sin ajustar}
 EI : Procesos en los que se introducen datos y que suponen la actualización de cualquier archivo interno. \\
 EO: Procesos en los que se envía datos al exterior de la aplicación. \\
 EQ: Procesos consistentes en la combinación de una entrada y una salida, en el que la entrada no produce ningún cambio en ningún archivo y la salida no contiene información derivada. \\
@@ -317,7 +323,7 @@ Ajuste de complejidad t\'ecnica (ACT) & & 20 \\
 
 %ACT Ajuste de complejidad tecnica
 
-\subsubsection{Calculo de los puntos de función ajustados}
+\subsubsection{C\'alculo de los puntos de función ajustados}
 
 $ACT = 20$
 
@@ -329,7 +335,7 @@ $PFA = 112 * [0,65 + [0,01 * 20]]$
 
 $PFA = 95,2$
 
-\subsubsection{Calculo del esfuerzo}
+\subsubsection{C\'alculo del esfuerzo}
 
 PFA = 95,2
 
@@ -343,13 +349,13 @@ Horas por Punto de Función = 7 \\
 \hline
 \end{tabular}
 
-\subsubsection{Calculo de la duración del proyecto}
+\subsubsection{C\'alculo de la duración del proyecto}
 
-Numero de personas en el proyecto = 3 personas
+N\'umero de personas en el proyecto = 3 personas
 
 \begin{tabular}{|l|l|}
 \hline
-\textbf{Duración} & Esfuerzo / (numero de personas en el proyecto) \\
+\textbf{Duración} & Esfuerzo / (n\'umero de personas en el proyecto) \\
          & (666,4 [horas/persona]) / (3 [personas]) \\
          & = 222,13 [horas] por miembro \\
 \hline
@@ -432,12 +438,12 @@ La suma de costos del personal y los costos operativos:
 $33060 + 1690 = 34750$ Bs.
 \end{center}
 
-En el siguiente calculo se detalla el costo por hora:
+En el siguiente c\'alculo se detalla el costo por hora:
 \begin{center}
 $((34750) / 22$ horas laborales $) / 8$ horas al día = $197.44$ Bs./Hora
 \end{center}
 
-Calculo del costo total:
+C\'alculo del costo total:
 \begin{center}
 $197,44$ Bs./Hora $ * 222,13$ Horas $= 43857,34$ Bs.
 \end{center}
@@ -459,7 +465,7 @@ $197,44$ Bs./Hora $ * 222,13$ Horas $= 43857,34$ Bs.
 El precio final ser\'ia de: Cincuenta y Siete Mil Catorce 54/100 Bs.
 
 \section{Plan de pagos}
-Los pagos se realizar\'an en la finalización de cada hito.\\
+Los pagos se realizar\'an luego de que nuestra empresa haya realizado una entrega al cliente.
 
 \begin{center}
   \begin{tabular}{|l|l|l|}
@@ -467,14 +473,15 @@ Los pagos se realizar\'an en la finalización de cada hito.\\
     \textbf{Pago} & \textbf{Evento} & \textbf{Monto (\%)} \\
     \hline
     \hline
-    1 & Demo de entrégable 17 de octubre, 2013 & 25.0 \%  \\
+    1 & Primera entrega 17 de octubre, 2013 & 25.0 \%  \\
     \hline
-    2 & Demo de entrégable 14 de noviembre, 2013  & 45.0 \%  \\
+    2 & Segunda entrega 14 de noviembre, 2013  & 45.0 \%  \\
     \hline
-    3 & Demo de entrégable 04 de diciembre, 2013& 30.0 \%  \\
+    3 & Ultima entrega 04 de diciembre, 2013 & 30.0 \%  \\
     \hline
   \end{tabular}
 \end{center}
+
 \section{Gestión de riesgos}
 La gestión de riesgos nos ayuda a prevenir posibles sucesos que eviten que se
 desarrolle y entregue el software en el tiempo y presupuesto establecido por la
@@ -484,7 +491,7 @@ La identificación de riesgos y el plan de contingencias se presenta a continuaci
 \newline
 \begin{center}
   \begin{tabular}{| p{1.2cm} | p{6.5cm} | p{1cm} | p{1.5cm} | p{2.8cm} |}
-	 \multicolumn{5}{c}{ \huge \textbf{Identificación de riesgos}}\\
+	 \multicolumn{5}{c}{  \textbf{Identificación de riesgos}}\\
 	 \multicolumn{5}{c}{ }\\
 	 \hline
 	 \textbf{Nro. Riesgo} & \textbf{Descripción} & \textbf{Proba. } & \textbf{Impacto} & \textbf{Consecuencias} \\
@@ -501,7 +508,7 @@ La identificación de riesgos y el plan de contingencias se presenta a continuaci
 \end{center}
 \begin{center}
   \begin{tabular}{| p{1.2cm} | p{12.3cm} |}
-	 \multicolumn{2}{c}{ \huge \textbf{Plan de contingencias}}\\
+	 \multicolumn{2}{c}{ \textbf{Plan de contingencias}}\\
 	 \hline
 	 \textbf{Nro. Riesgo} & \textbf{ Estrategia a Desarrollar}  \\
 	 \hline
