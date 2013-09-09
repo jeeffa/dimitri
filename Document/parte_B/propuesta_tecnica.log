@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  6 SEP 2013 16:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2013.8.31)  9 SEP 2013 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,141 +466,156 @@ File: membrete_bw.pdf Graphic file (type pdf)
 Package pdftex.def Info: membrete_bw.pdf used on input line 229.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [12]
-File: membrete_bw.pdf Graphic file (type pdf)
- <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 274.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 276--281
-
+Underfull \hbox (badness 2318) in paragraph at lines 276--276
+[]\OT1/cmr/m/n/12 Sistema com-ple-to, in-te-gra-do
  []
 
 
-Overfull \hbox (65.42429pt too wide) in paragraph at lines 302--337
+Underfull \hbox (badness 5161) in paragraph at lines 276--276
+\OT1/cmr/m/n/12 con los an-te-rio-res en-tre-ga-
+ []
+
+File: membrete_bw.pdf Graphic file (type pdf)
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 279.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 289--294
+
+ []
+
+File: membrete_bw.pdf Graphic file (type pdf)
+<use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 313.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [14]
+Overfull \hbox (65.42429pt too wide) in paragraph at lines 315--350
 [][] 
  []
 
 File: membrete_bw.pdf Graphic file (type pdf)
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 340.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [14]
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--377
-
- []
-
-File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 378.
+Package pdftex.def Info: membrete_bw.pdf used on input line 369.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--386
+Underfull \hbox (badness 10000) in paragraph at lines 383--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--394
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 393--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 400--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 File: membrete_bw.pdf Graphic file (type pdf)
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 442.
+Package pdftex.def Info: membrete_bw.pdf used on input line 436.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [16]
-Underfull \hbox (badness 10000) in paragraph at lines 500--506
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--506
-
- []
-
 File: membrete_bw.pdf Graphic file (type pdf)
-<use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 506.
+ <use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 510.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [17]
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 513--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
 []\OT1/cmr/bx/n/12 Nro.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
 \OT1/cmr/bx/n/12 Ries-
  []
 
 
-Overfull \hbox (10.84589pt too wide) in paragraph at lines 511--511
+Overfull \hbox (10.84589pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/bx/n/12 Proba.
  []
 
 
-Overfull \hbox (5.66116pt too wide) in paragraph at lines 511--511
+Overfull \hbox (5.66116pt too wide) in paragraph at lines 524--524
 []\OT1/cmr/bx/n/12 Impacto| 
  []
 
 
-Overfull \hbox (4.61415pt too wide) in paragraph at lines 511--512
+Overfull \hbox (4.61415pt too wide) in paragraph at lines 524--525
 []\OT1/cmr/bx/n/12 Consecuencias| 
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 513--514
+Underfull \hbox (badness 2781) in paragraph at lines 526--527
 []\OT1/cmr/m/n/12 Posibles re-tra-
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 515--516
+Underfull \hbox (badness 4981) in paragraph at lines 528--529
 \OT1/cmr/m/n/12 ni-fi-ca-ci^^Son pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 \OT1/cmr/m/n/12 desa-rro-llo del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 \OT1/cmr/m/n/12 desa-rro-llo del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
 []\OT1/cmr/bx/n/12 Nro.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
 \OT1/cmr/bx/n/12 Ries-
  []
 
 File: membrete_bw.pdf Graphic file (type pdf)
 <use membrete_bw.pdf>
-Package pdftex.def Info: membrete_bw.pdf used on input line 540.
+Package pdftex.def Info: membrete_bw.pdf used on input line 552.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [18] (./propuesta_tecnica.aux
+ [18]
+File: membrete_bw.pdf Graphic file (type pdf)
+ <use membrete_bw.pdf>
+Package pdftex.def Info: membrete_bw.pdf used on input line 553.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [19] (./propuesta_tecnica.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
@@ -620,10 +635,10 @@ mr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/latxfont/lasy10.pfb>
-Output written on propuesta_tecnica.pdf (18 pages, 169690 bytes).
+Output written on propuesta_tecnica.pdf (19 pages, 170611 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
